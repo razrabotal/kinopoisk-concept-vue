@@ -1,0 +1,407 @@
+$open-header-height: 300px;
+$nav-height:38px;
+
+/* Чистая разметка */
+.header {
+  display: flex;
+  align-items: center;
+  &__center {
+    display: flex;
+    flex:auto;
+  }
+  &__right {
+    margin-left: auto;
+  }
+}
+.search {
+  flex:auto;
+  display: flex;
+  form {
+    flex:auto;
+    display: flex;
+  }
+  &__text {
+    flex:auto;
+  }
+}
+@include for-phone {
+  .header__center {
+    > .services, > .search {
+      display: none;
+    }
+  }
+}
+.nav {
+  display: flex;
+  > ul {
+    position: relative;
+    display: flex;
+    @include for-phone {
+      width:100%;
+      flex-wrap:wrap;
+      height:$nav-height;
+      overflow:hidden;
+      transition: 0.2s;
+    }
+    > li {
+      position: relative;
+      height:$nav-height;
+      line-height:$nav-height;
+      > ul {
+        display: none;
+        position: absolute;
+        top:$nav-height;
+        width: 100%;
+        li {
+          position: relative;
+          > ul {
+            display: none;
+            position: absolute;
+            left:100%;
+            top:0;
+            width: 100%;
+          }
+          &:hover {
+            > ul {
+              @include not-for-phone {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        > ul {
+          @include not-for-phone {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  &.nav--open {
+    > ul {
+      height: $open-header-height;
+    }
+    .nav__subtoggle {
+      display: inline-block!important;
+    }
+  }
+  &__subtoggle {
+    @include for-phone {
+      display: none!important;
+    }
+  }
+  &__li {
+    &--open {
+      height: auto!important;
+      > ul {
+        top:0!important;
+        left:0!important;
+        position: relative!important;
+        display: block!important;
+      }
+    }
+  }
+  &__services, &__search {
+    display: none;
+    @include for-phone {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+/* Прозрачная шапка */
+.header__transparent {
+  .header {
+    background: transparent!important;
+    color:#fff;
+    border:0;
+    @include for-phone {
+      background: #fff!important;
+      color:#000;
+    }
+  }
+  .nav {
+    background: transparent!important;
+    @include for-phone {
+      background: #fff;
+      color:#000;
+    }
+  }
+}
+
+/* Фиксированная шапка */
+.header-wrap {
+  & + main .main-wrap .main {
+    margin-top: 250px;
+    @include for-phone {
+      //margin-top: 38px + 5px * 2;
+      margin-top: 200px;
+    }
+  }
+}
+
+/* Кастомизация навигации */
+.nav {
+  z-index: 10;
+  position: relative;
+  margin-right: 20px;
+  padding: 0;
+  >ul >li:not(:last-child){
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+  &__toggle {
+    position: relative;
+    margin-left: auto;
+    height:$nav-height;
+    line-height:$nav-height;
+    width: 30px;
+    height: 30px;
+    padding: 7px 0;
+    display: none;
+    @include for-phone {
+      display:block;
+    }
+  }
+  &__subtoggle {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    vertical-align:middle;
+    width: 12px;
+    height: 12px;
+    top:14px;
+    &:before, &:after {
+      content:"";
+      position: absolute;
+      top:0;
+      display: block;
+      width:8px;
+      height:1px;
+      background: CurrentColor;
+      transition:0.2s;
+    }
+    &:before {
+      left:0;
+      transform:rotate(45deg);
+    }
+    &:after {
+      left:5px;
+      transform:rotate(-45deg);
+    }
+  }
+  @include not-for-phone {
+    > ul ul .nav__subtoggle {
+      transform:rotate(-90deg);
+      top:10px;
+    }
+  }
+  &__li--open {
+    @include for-phone {
+      > .nav__subtoggle {
+        &:before {
+          transform:rotate(-45deg);
+        }
+        &:after {
+          transform:rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+/* Кастомизация шапки */
+.header {
+  position: relative;
+  z-index: 2;
+  padding: 10px 30px;
+  background: #fff;
+  color:#000;
+  border-bottom: 1px solid $color-border;
+  transition: 0.25s;
+  .dropdown__main {
+    width:230px;
+  }
+  a:hover, .link:hover {
+    color:#ddd;
+  }
+}
+@include for-tablet {
+  .header {
+    background: #fff!important;
+    color:#000;
+    padding: 3px 10px;
+  }
+  .nav {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    color:#000;
+    padding: 5px 10px;
+    border-top: 1px solid $color-border;
+    box-shadow: 0 10px 10px -1px rgba(0,0,0,0.15);
+    li {
+      width: 100%;
+      &:not(.nav__search):not(:last-child) {
+        border-bottom:1px solid rgba(128,128,128,0.1);
+      }
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+@include for-phone{
+  .nav__search {
+    width: 100%;
+    margin-right: 0!important;
+    .search {
+      margin-right: 0!important;
+    }
+  }
+}
+.is-sticky {
+  header {
+    z-index: 10!important;
+    .header {
+      transition: 0.25s;
+      background: rgba(255,255,255,0.96)!important;
+      //-webkit-backdrop-filter: saturate(180%) blur(20px);
+      color:#000;
+      border-bottom: 1px solid $color-border;
+    }
+  }
+}
+
+
+/* Элементы шапки */
+.logo {
+  color:$color-select;
+  font: 700 24px Verdana;
+  line-height: $nav-height;
+  margin-right: 20px;
+  transition: 0.2s;
+  &:hover {
+    color:darken($color-select, 10%);
+  }
+}
+.search {
+  position: relative;
+  margin-right: 20px;
+  &__text {
+    background: none;
+    border:1px solid rgba(180,180,180,0.5);
+    border-radius:5px;
+    padding-left: 10px;
+    transition: 0.2s;
+    color: CurrentColor;
+    appearance: none;
+    -webkit-appearance: none;
+    &:focus, &:active {
+      background: #fff;
+      color:#000;
+      & ~ * {
+        color:#000;
+      }
+      & ~ button:hover {
+        opacity:0.45;
+      }
+    }
+  }
+  &__button, &__button-sliders {
+    position: absolute;
+    color:CurrentColor;
+    background: none;
+    border:0;
+    top:0;
+    bottom:0;
+    padding: 0 6px;
+    transition: 0.2s;
+  }
+  &__button {
+    right: 30px;
+  }
+  &__button-sliders {
+    right: 7px;
+  }
+}
+.services {
+  line-height: $nav-height;
+  margin-right: 20px;
+}
+.user {
+  position: relative;
+  //line-height: $nav-height - 15px;
+  &__img {
+    width: 35px;
+    border-radius: 50%;
+    border:1px solid #fff;
+  }
+  &__notif {
+    position: absolute;
+    display: block;
+    top: -19px;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: red;
+  }
+  &__dropdownfirst {
+    position:relative;
+    a {
+      position: relative;
+      font-weight: 700;
+    }
+    &__line {
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: #000;
+    }
+  }
+}
+
+/* Гамбургер */
+.menu-icon  {
+  color: currentColor;
+  margin: 10px auto;
+  &, &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    background-color: currentColor;
+    transition: top 0.1s 0.2s, transform 0.2s;
+    transform: translateZ(0);
+  }
+  &:before {
+    top: -7px;
+  }
+  &:after {
+    top: 7px;
+  }
+}
+.nav__toggle--open .menu-icon{
+  background: none;
+  &:before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 0.1s, transform 0.1s 0.1s;
+  }
+  &:after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: top 0.1s, transform 0.1s 0.1s;
+  }
+}

@@ -1,0 +1,216 @@
+/* Приведение стандартных элементов к нормальному виду */
+
+/* Заголовки */
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  & + .sub-h1 {
+    display: block;
+    margin: -30px 0 30px;
+    font-size: 12px;
+    color:#999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 320px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  & + .sub-h2 {
+    display: block;
+    margin: -20px 0 20px;
+    font-size: 12px;
+    color:#999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 320px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+/* Текст */
+p {
+  margin: 0 0 10px;
+  line-height: 1.3;
+  font-size: 14px;
+}
+
+
+/* Инпуты */
+[type="radio"] {
+  position: relative;
+  outline: none!important;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0 white;
+  cursor: pointer;
+  font: inherit;
+  height: 1.1rem;
+  width: 1.1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &:checked {
+    background-color: $color-select;
+    box-shadow: inset 0 0 0 .2em #fff;
+    -webkit-transition: background .15s, box-shadow .1s;
+    transition: background .15s, box-shadow .1s;
+  }
+}
+
+[type="checkbox"] {
+  position: relative;
+  outline: none!important;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 0.25rem;
+  box-shadow: inset 0 0 0 0 white;
+  cursor: pointer;
+  font: inherit;
+  height: 1.25rem;
+  width: 1.25rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  top: 0.25rem;
+  &:checked:after {
+    content: "\2713";
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-select;
+    top: -0.75rem;
+    left: 0.1rem;
+  }
+}
+
+input.switch::before, [type="checkbox"].switch:checked:after {
+  content: "";
+}
+input.switch {
+  width: 2.5rem;
+  height: 1.3rem;
+  line-height: 2.6em;
+  border-radius: 10rem;
+  padding: 0;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: box-shadow 0.25s ease-in-out, padding 0.15s ease-in-out;
+  transition-delay: .1s, 0s;
+  &:before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 2.1em;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0.1rem 0.2rem 0 rgba(0,0,0,0.1);
+    transition: all .1s ease .1s;
+  }
+  &:checked {
+    transition-delay: 0s, 0s;
+    box-shadow: inset 0 0 0 2.62857em $color-select !important;
+    padding-left: 1.175rem;
+  }
+  &:checked:before {
+    box-shadow: inset 0 0 0 1px $color-select;
+  }
+  &:active {
+    &:checked::before {
+      margin-left: -0.3em;
+    }
+    &:before {
+      width: 1.4em;
+      transition: all .1s ease .05s;
+    }
+  }
+}
+@keyframes slide-on {
+  0% {
+    padding-left: 0;
+  }
+  60% {
+    padding-left: 1.8rem;
+  }
+  100% {
+    padding-left: 1.7rem;
+  }
+}
+@keyframes slide-off {
+  0% {
+    padding-left: 1.6rem;
+    text-indent: 0;
+  }
+  60% {
+    padding-left: 0;
+    text-indent: -0.2rem;
+  }
+  100% {
+    padding-left: 0;
+    text-indent: 0;
+  }
+}
+
+.dropdown-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  select {
+    background-color: #fff;
+    color: #000;
+    font-size: inherit;
+    padding: 6px 5px;
+    padding-right: 25px;
+    border: 1px solid #ddd;
+    margin: 0;
+    border-radius: 3px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance: button;
+    font-size: 12px;
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    width:8px;
+    height:1px;
+    background: CurrentColor;
+    transition:0.2s;
+
+    top:14px;
+  }
+  &:before {
+    right:12px;
+    transform:rotate(45deg);
+  }
+  &:after {
+    right:7px;
+    transform:rotate(-45deg);
+  }
+  &:active {
+    &:before {
+      transform:rotate(-45deg);
+    }
+    &:after {
+      transform:rotate(45deg);
+    }
+  }
+}

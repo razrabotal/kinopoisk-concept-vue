@@ -1,0 +1,454 @@
+/*
+  Основные блоки страницы
+*/
+
+/* Основная информация */
+.info {
+  display: flex;
+  @include for-phone{
+    display: block;
+  }
+  &__left {
+    flex:1;
+    padding: 30px 30px;
+    @include for-phone{
+      padding: 45px 15px 10px;
+    }
+    > img {
+      display: block;
+      width: 100%;
+      min-width: 300px;
+      margin-bottom: 20px;
+      box-shadow: 0 13px 20px -6px rgba(0,0,0,0.25);
+      @include for-phone{
+        min-width: initial;
+      }
+    }
+    .btn-select {
+      margin-right: 5px;
+    }
+    small {
+      margin:10px 0 0 15px;
+    }
+  }
+  &__right {
+    flex:2;
+    padding: 30px 20px 30px 15px;
+    flex:auto;
+    .service-text {
+      margin-bottom: 30px;
+    }
+  }
+  &__buttons {
+    display: flex;
+  }
+  &__notes {
+    margin-bottom: 20px;
+  }
+  &__rewards {
+    position: relative;
+    display: flex;
+    > span {
+      > img {
+        width: 100%;
+      }
+    }
+    &:after {
+      content:"";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 5px;
+      background: $color-serv-back;
+      box-shadow: 0 2px 2px -2px rgba(0,0,0,0.75),
+                  0 4px 5px -1px rgba(0,0,0,0.25);
+    }
+  }
+}
+
+
+/* Биография */
+.biography {
+  padding: 30px 0 15px;
+  margin: 0 20px;
+  border-bottom: 1px solid $color-border;
+  &__mainp {
+    font-size: 16px;
+    background: $color-serv-back;
+  }
+  &__modal {
+    //color:#fff;
+    padding: 0 50px 0 40px;
+    background: transparent;
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.5;
+  }
+}
+
+/* Фотографии */
+.photo {
+  padding: 30px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid $color-border;
+  img {
+    width: 100%;
+  }
+  &__galery {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a {
+      position: relative;
+      span {
+        display: none;
+      }
+      &:not(:first-child) {
+        display: inline-block;
+        flex:1;
+        img {
+            height: 100px;
+            object-fit: cover;
+        }
+      }
+      &:first-child {
+        display: block;
+        line-height: 0.8;
+        img {
+          max-height: 320px;
+          object-fit: cover;
+        }
+      }
+      &:nth-child(4) {
+        span {
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          right: 0;
+          line-height: 100px;
+          text-align: center;
+          color:#fff;
+          background: rgba(0,0,0,0.5);
+          cursor:pointer;
+        }
+      }
+    }
+  }
+}
+
+/* Связи */
+.connect {
+  padding: 30px 0 15px;
+  margin: 0 20px;
+  border-bottom: 1px solid $color-border;
+  div {
+    p:last-of-type {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/* Материалы */
+.materials {
+  padding: 30px 0 15px;
+  margin: 0 20px;
+  border-bottom: 1px solid $color-border;
+}
+
+/* Сайты */
+.sites {
+  padding: 30px 0;
+  margin: 0 20px;
+  p {
+    line-height: 1.2;
+    margin-bottom: 20px;
+    .link {
+      font-size: 12px;
+    }
+  }
+}
+
+
+/* Табы */
+.tabs {
+  &__labels {
+    display: flex;
+    padding:0 30px 100px;
+    box-sizing: content-box;
+    @include for-phone{
+      padding:0 0 100px;
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch!important;
+      -ms-overflow-style: -ms-autohiding-scrollbar!important;
+    }
+    &__wrap {
+      overflow: hidden;
+      height: 36px;
+      width: 100%;
+      border-bottom: 1px solid $color-border;
+    }
+    &.tabs__labels--modal {
+      padding: 0 0 100px;
+    }
+  }
+  &.tabs--column {
+    .tabs__item {
+      display: block;
+      padding: 10px 20px;
+    }
+    .img-block--left, .material {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      &:nth-child(even) {
+        padding-left: 15px;
+      }
+    }
+  }
+  &.tabs--2-column {
+    .tabs__item {
+      display: flex;
+      padding: 10px 20px;
+      > * {
+        flex:50%;
+      }
+    }
+  }
+  &.tabs--no-padding {
+    .tabs__item {
+      padding: 0;
+    }
+  }
+  &__tab {
+    display: inline-block;
+    padding: 10px 0;
+    background: none;
+    color:#999;
+    font-weight: 600;
+    cursor: pointer;
+    @include for-phone{
+      padding: 10px 15px;
+    }
+    &:not(:last-child) {
+      margin-right: 15px;
+      @include for-phone{
+        margin-right: 0;
+      }
+    }
+    &.active {
+      color:#000;
+      border-bottom: 2px solid #fa5630;
+    }
+    &.active-white {
+      color:#fff;
+      border-bottom: 2px solid #fa5630;
+    }
+  }
+  &__item {
+    display: flex;
+    padding: 20px 30px;
+    @include for-phone{
+      padding: 20px 0;
+    }
+  }
+}
+
+/* Статистика */
+.statistics {
+  display: table;
+  width: 250px;
+  margin-right: 20px;
+  > div {
+    display: table-row;
+    > div {
+      display: table-cell;
+      padding-bottom:10px;
+      p {
+        font-size: 26px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+    &:not(:last-child) > div {
+      border-bottom: 1px solid $color-border;
+    }
+    &:not(:first-child) > div {
+      padding-top: 10px;
+    }
+  }
+  &__main {
+    color: $color-select;
+  }
+}
+
+/* Список фильмов */
+.films {
+  width: 100%;
+  @include for-phone{
+    padding: 0 15px;
+  }
+  &__filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    @include for-phone{
+      align-items: flex-start;
+    }
+  }
+  &__sort {
+    &__text {
+      color: #999;
+      @include for-phone{
+        display: none;
+      }
+    }
+    .dropdown {
+      display: inline-block;
+      margin-right: 10px;
+      @include for-phone{
+        //display: block;
+        margin-bottom: 15px;
+        margin-right: 10px;
+      }
+      .dropdown__main {
+        left: 0;
+        right: initial;
+        li:first-child:before {
+          left: 9px;
+          right: initial;
+        }
+        li:first-child:after {
+          left: 10px;
+          right: initial;
+        }
+      }
+    }
+  }
+  &__view {
+    margin-left: auto;
+    .dropdown__label {
+      white-space: nowrap;
+    }
+  }
+  &__table {
+    margin: 0 -15px;
+    .film-with-back {
+      width: 50%;
+      display: inline-block ;
+      @include for-phone{
+        display: block;
+        width: 100%;
+      }
+      &:nth-child(even) {
+        padding-left: 20px;
+        .film-with-back__img {
+          left: 40px;
+        }
+        @include for-phone{
+          padding-left: 0;
+          .film-with-back__img {
+            left: 20px;
+          }
+        }
+      }
+      &__year {
+        display: none;
+      }
+    }
+
+    &--list {
+      margin: 0;
+      .film-with-back {
+        display: block;
+        width: 100%;
+        padding-left: 0!important;
+        &__note {
+          span {
+            display: inline-block;
+          }
+        }
+        &__year {
+          display: block;
+        }
+        &__name {
+          .link {
+            font-size: 16px;
+          }
+          &__year {
+            display: none;
+          }
+          .middot {
+            span:nth-last-child(2):after {
+              display: none;
+            }
+          }
+        }
+        &__back, &__img {
+          display: none;
+        }
+        &__info {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/* Коллекции */
+.collections {
+  flex:2;
+  padding: 20px 30px 20px;
+  @include for-phone{
+    padding: 20px 15px 20px;
+  }
+  &__main {
+    display: flex;
+    @include for-phone{
+      display: block;
+    }
+    > *:not(:last-child) {
+      margin-right: 20px;
+      @include for-phone{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/* Случайный фильм */
+.random-film {
+  position: relative;
+  flex:1;
+  padding: 20px 15px;
+  &__reload {
+    position: absolute;
+    right: 30px;
+    top:25px;
+    font-size: 18px;
+    color:#999!important;
+  }
+  .film-with-back {
+    background: #fff;
+  }
+}
+
+/* История */
+.history {
+  &__header {
+    padding: 30px 30px 0;
+  }
+  &__main {
+    padding: 0 30px;
+    @include for-phone{
+      padding: 20px 0;
+    }
+  }
+}

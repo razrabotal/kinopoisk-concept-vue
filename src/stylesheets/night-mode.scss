@@ -1,0 +1,65 @@
+.night {
+  $color-black: #161616;
+  $color-black2: #050505;
+
+  background: $color-black;
+  color:#fff;
+
+  header .header, .nav {
+    background: $color-black;
+    color:#fff!important;
+  }
+  .header__transparent {
+    .header {
+      @include not-for-phone {
+        background: transparent!important;
+      }
+    }
+  }
+  .is-sticky {
+    .header, .nav {
+      background: $color-black!important;
+    }
+  }
+  .main {
+    box-shadow: 0 30px 50px -20px #000;
+  }
+  .persona {
+    &__main {
+      background: $color-black;
+    }
+    &__info__buttons {
+      .btn-round--default {
+        background: transparent;
+        color:#fff;
+      }
+    }
+    &__random {
+      .film-with-back {
+        background: $color-black2;
+      }
+    }
+    .material__title {
+      background: $color-black;
+    }
+  }
+  .collection, .random-film .film-with-back {
+    background: $color-black2;
+  }
+  .slider {
+    .arrow-right, .arrow-left {
+      color:#000;
+    }
+    &:before, &:after {
+      background: none;
+    }
+  }
+  .tabs__tab.active {
+    color:#fff;
+  }
+  .modal-container {
+    .tabs__tab.active {
+      color:CurrentColor;
+    }
+  }
+}
