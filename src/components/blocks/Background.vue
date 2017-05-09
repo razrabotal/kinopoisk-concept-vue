@@ -10,11 +10,11 @@
     <Modal v-if="showModalBackground" @close="showModalBackground = false" class="black">
       <h3 slot="header">{{ banners.background.title }}</h3>
       <div slot="body">
-        <iframe width="100%" height="400" :src="banners.background.trailerSrc" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="500" :src="banners.background.trailerSrc" frameborder="0" allowfullscreen></iframe>
       </div>
     </Modal>
   </div>
-  
+
 </template>
 
 <script type="text/javascript">

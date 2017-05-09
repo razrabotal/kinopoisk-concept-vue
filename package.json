@@ -1,7 +1,7 @@
 {
-  "name": "vue-webgulp",
-  "version": "0.1.0",
-  "description": "Vue.js + Webpack + Gulp + Vue Loader skeleton",
+  "name": "kinopoisk",
+  "version": "1.2.0",
+  "description": "Vue.js + Webpack + Gulp",
   "main": "src/main.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "kit",
     "skeleton"
   ],
-  "author": "Rodrigo Lessa",
+  "author": "Taras Gordienko",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.1.21",

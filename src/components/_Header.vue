@@ -88,7 +88,7 @@ export default {
 };
 
 $(document).ready(function(){
-   $("header").sticky({topSpacing:0, bottomSpacing:500, wrapperClassName: "header-wrap"});
+   //$("header").sticky({topSpacing:0, bottomSpacing:500, wrapperClassName: "header-wrap"});
  });
 
 </script>

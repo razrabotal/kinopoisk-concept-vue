@@ -124,7 +124,7 @@ $nav-height:38px;
     }
   }
   .nav {
-    background: transparent!important;
+    background: transparent;
     @include for-phone {
       background: #fff;
       color:#000;
@@ -133,7 +133,7 @@ $nav-height:38px;
 }
 
 /* Фиксированная шапка */
-.header-wrap {
+header {
   & + main .main-wrap .main {
     margin-top: 250px;
     @include for-phone {

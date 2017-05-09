@@ -154,7 +154,7 @@
 	exports.push([module.id, "@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);", ""]);
 
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n/* VARIABLES */\n/* pilot.scss v1.0 | Taras Gordienko | sdelal.xyz/pilot.scss */\n/* ADAPTIVE */\n/* HELP-CLASSES */\n/* RESET */\n*, *:after, *:before {\n  box-sizing: border-box; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  vertical-align: baseline; }\n\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1;\n  font-family: -apple-system, Arial, sans-serif; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n  blockquote:before, blockquote:after, q:before, q:after {\n    content: '';\n    content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n/* NORMALIZE */\nimg {\n  max-width: 100%; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: -apple-system, Arial, sans-serif;\n  font-size: 100%;\n  line-height: 1.15;\n  margin: 0;\n  outline: 0;\n  padding: 5px 10px; }\n\nselect {\n  margin-left: 15px;\n  border-radius: 0;\n  border: 0;\n  font-size: 12px; }\n\nbutton,\n[type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; }\n  button:hover,\n  [type=\"button\"]:hover,\n  [type=\"reset\"]:hover,\n  [type=\"submit\"]:hover {\n    cursor: pointer; }\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0; }\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; }\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  font: inherit; }\n\n[hidden] {\n  display: none; }\n\n/* LINKS */\na, .link {\n  word-break: break-all;\n  text-decoration: none;\n  color: CurrentColor;\n  background-image: linear-gradient(180deg, CurrentColor 0%, transparent 70%);\n  background-position: 0 100%;\n  background-size: 1px 1px;\n  background-repeat: repeat-x; }\n  a:hover, .link:hover {\n    color: #a03000; }\n\n.links-blue, .links-blue a, .links-blue .link {\n  color: #0064a8; }\n\n.links-light, .links-light a, .links-light .link {\n  background-image: linear-gradient(180deg, CurrentColor 40%, transparent 100%); }\n\n.links-blue:visited .link, .links-light:visited .link {\n  color: #98b8c8; }\n\n.links-blue:hover .link, .links-light:hover .link {\n  color: #a03000; }\n\n.nolink, .nolink:visited, .nolink:hover {\n  color: CurrentColor;\n  background-size: 0; }\n  .nolink .link, .nolink:visited .link, .nolink:hover .link {\n    background-size: 1px 1px; }\n\n.nolink:hover .link {\n  color: #a03000; }\n\n/* Приведение стандартных элементов к нормальному виду */\n/* Заголовки */\nh1 {\n  font-size: 36px;\n  margin-bottom: 40px; }\n  h1 + .sub-h1 {\n    display: block;\n    margin: -30px 0 30px;\n    font-size: 12px;\n    color: #999;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 320px; }\n\nh2 {\n  font-size: 24px;\n  margin-bottom: 25px; }\n  h2 + .sub-h2 {\n    display: block;\n    margin: -20px 0 20px;\n    font-size: 12px;\n    color: #999;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 320px; }\n\nh3 {\n  font-size: 18px;\n  margin-bottom: 10px; }\n\nh5 {\n  font-size: 13px;\n  margin-bottom: 5px; }\n\n/* Текст */\np {\n  margin: 0 0 10px;\n  line-height: 1.3;\n  font-size: 14px; }\n\n/* Инпуты */\n[type=\"radio\"] {\n  position: relative;\n  outline: none !important;\n  border: 1px solid rgba(0, 0, 0, 0.5);\n  border-radius: 50%;\n  box-shadow: inset 0 0 0 0 white;\n  cursor: pointer;\n  font: inherit;\n  height: 1.1rem;\n  width: 1.1rem;\n  -moz-appearance: none;\n  -webkit-appearance: none; }\n  [type=\"radio\"]:checked {\n    background-color: #fc5630;\n    box-shadow: inset 0 0 0 .2em #fff;\n    -webkit-transition: background .15s, box-shadow .1s;\n    transition: background .15s, box-shadow .1s; }\n\n[type=\"checkbox\"] {\n  position: relative;\n  outline: none !important;\n  border: 1px solid rgba(0, 0, 0, 0.25);\n  border-radius: 0.25rem;\n  box-shadow: inset 0 0 0 0 white;\n  cursor: pointer;\n  font: inherit;\n  height: 1.25rem;\n  width: 1.25rem;\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  top: 0.25rem; }\n  [type=\"checkbox\"]:checked:after {\n    content: \"\\2713\";\n    position: absolute;\n    font-size: 1.5rem;\n    font-weight: 600;\n    color: #fc5630;\n    top: -0.75rem;\n    left: 0.1rem; }\n\ninput.switch::before, [type=\"checkbox\"].switch:checked:after {\n  content: \"\"; }\n\ninput.switch {\n  width: 2.5rem;\n  height: 1.3rem;\n  line-height: 2.6em;\n  border-radius: 10rem;\n  padding: 0;\n  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);\n  cursor: pointer;\n  border: none;\n  background: transparent;\n  transition: box-shadow 0.25s ease-in-out, padding 0.15s ease-in-out;\n  transition-delay: .1s, 0s; }\n  input.switch:before {\n    display: inline-block;\n    position: absolute;\n    top: 0;\n    height: 1.5em;\n    width: 1.5em;\n    margin: 0;\n    background-color: #fff;\n    border-radius: 2.1em;\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);\n    transition: all .1s ease .1s; }\n  input.switch:checked {\n    transition-delay: 0s, 0s;\n    box-shadow: inset 0 0 0 2.62857em #fc5630 !important;\n    padding-left: 1.175rem; }\n  input.switch:checked:before {\n    box-shadow: inset 0 0 0 1px #fc5630; }\n  input.switch:active:checked::before {\n    margin-left: -0.3em; }\n  input.switch:active:before {\n    width: 1.4em;\n    transition: all .1s ease .05s; }\n\n@keyframes slide-on {\n  0% {\n    padding-left: 0; }\n  60% {\n    padding-left: 1.8rem; }\n  100% {\n    padding-left: 1.7rem; } }\n\n@keyframes slide-off {\n  0% {\n    padding-left: 1.6rem;\n    text-indent: 0; }\n  60% {\n    padding-left: 0;\n    text-indent: -0.2rem; }\n  100% {\n    padding-left: 0;\n    text-indent: 0; } }\n\n.dropdown-select {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  margin-right: 5px; }\n  .dropdown-select select {\n    background-color: #fff;\n    color: #000;\n    font-size: inherit;\n    padding: 6px 5px;\n    padding-right: 25px;\n    border: 1px solid #ddd;\n    margin: 0;\n    border-radius: 3px;\n    text-indent: 0.01px;\n    text-overflow: '';\n    -webkit-appearance: button;\n    font-size: 12px; }\n  .dropdown-select:before, .dropdown-select:after {\n    content: \"\";\n    position: absolute;\n    display: block;\n    pointer-events: none;\n    width: 8px;\n    height: 1px;\n    background: CurrentColor;\n    transition: 0.2s;\n    top: 14px; }\n  .dropdown-select:before {\n    right: 12px;\n    transform: rotate(45deg); }\n  .dropdown-select:after {\n    right: 7px;\n    transform: rotate(-45deg); }\n  .dropdown-select:active:before {\n    transform: rotate(-45deg); }\n  .dropdown-select:active:after {\n    transform: rotate(45deg); }\n\n/* Сервисный текст. ОСТОРОЖНО БЛОК */\n.service-text {\n  display: block;\n  background: rgba(183, 183, 180, 0.2);\n  color: #989795;\n  padding: 10px 5px 10px 15px;\n  font-size: 11px; }\n\n/* Маленький текст, подписи. ОСТОРОЖНО БЛОК */\nsmall, span.small {\n  display: block;\n  font-size: 12px;\n  color: #999;\n  margin-bottom: 5px;\n  margin-top: 3px; }\n\n/* Большой акцидентный текст. ОСТОРОЖНО БЛОК */\nbig, span.big {\n  display: block;\n  font-size: 16px;\n  margin-bottom: 3px; }\n\n/* Точки под заголовком */\n.middot {\n  word-break: normal;\n  line-height: 1.2; }\n  .middot > *:not(:last-child):after {\n    content: \"\\B7\";\n    display: inline-block;\n    margin: 0 3px 0 3px; }\n\n/* Иконка стрелки */\n.arrow-icon {\n  position: absolute;\n  right: 8px;\n  display: inline-block;\n  vertical-align: middle;\n  width: 16px;\n  height: 16px;\n  top: 14px; }\n  .arrow-icon:before {\n    content: \"\";\n    position: absolute;\n    top: 5px;\n    left: 0;\n    display: block;\n    width: 8px;\n    height: 1px;\n    background: CurrentColor;\n    transform: rotate(45deg);\n    transition: 0.2s; }\n  .arrow-icon:after {\n    content: \"\";\n    position: absolute;\n    top: 5px;\n    left: 5px;\n    display: block;\n    width: 8px;\n    height: 1px;\n    background: CurrentColor;\n    transform: rotate(-45deg);\n    transition: 0.2s; }\n  .arrow-icon.active:before {\n    transform: rotate(-45deg); }\n  .arrow-icon.active:after {\n    transform: rotate(45deg); }\n  .arrow-icon:hover {\n    color: #999;\n    cursor: pointer; }\n\n/* Обычная кнопка */\n.btn {\n  border: 1px solid rgba(128, 128, 128, 0.5);\n  background: transparent;\n  border-radius: 4px;\n  padding: 5px 12px;\n  color: #999;\n  transition: 0.2s; }\n  .btn.small {\n    font-size: 12px; }\n  .btn:hover {\n    background: #f2f2f2; }\n\n/* Кнопка с закругленными */\n.btn-round {\n  position: relative;\n  border: 0;\n  border-radius: 100px;\n  padding: 8px 15px;\n  font-size: 14px;\n  transition: 0.2s; }\n  .btn-round--default {\n    color: #000;\n    background: rgba(255, 255, 255, 0.85);\n    border: 1px solid rgba(128, 128, 128, 0.25); }\n    .btn-round--default:hover {\n      background: rgba(230, 230, 230, 0.85); }\n  .btn-round--main {\n    background: #fc5630;\n    color: #fff; }\n    .btn-round--main:hover {\n      background: #f53104; }\n\n/* Небольшая служебная кнопка */\n.btn-mini {\n  border: 0;\n  background: rgba(183, 183, 180, 0.2);\n  color: #989795;\n  font-size: 11px;\n  padding: 4px 10px;\n  transition: 0.2s; }\n  .btn-mini:hover {\n    background: rgba(171, 171, 167, 0.2); }\n\n/* Кнопка со стрелкой */\n.btn-select {\n  position: relative;\n  display: inline-block; }\n  .btn-select button {\n    padding-right: 33px; }\n  .btn-select .arrow-icon {\n    position: absolute;\n    top: 12px;\n    right: 10px; }\n\n/* Кнопка, которая открывает спойлер */\n.btn-toggle--active .fa-heart {\n  color: #fc5630; }\n\n.btn-spoiler-open:after {\n  content: \"\\41F\\43E\\43A\\430\\437\\430\\442\\44C   \\435\\449\\435   \\2193\"; }\n\n.show > .btn-spoiler-open:after {\n  content: \"\\421\\43A\\440\\44B\\442\\44C   \\2191\"; }\n\n/*\n  Элементы\n*/\n/* Материал */\n.material {\n  display: block;\n  margin-bottom: 25px; }\n  .material__header {\n    position: relative;\n    display: block; }\n  .material__img {\n    display: block;\n    margin-bottom: 10px;\n    height: 230px;\n    width: 100%;\n    object-fit: cover;\n    border-radius: 3px; }\n  .material__title {\n    position: absolute;\n    bottom: 0;\n    width: 80%;\n    display: block;\n    padding: 7px 7px 0 0;\n    font-weight: 600;\n    font-size: 18px;\n    line-height: 1.4;\n    background: #fff;\n    word-break: normal; }\n  .material__text {\n    display: block;\n    margin-bottom: 5px;\n    line-height: 1.3; }\n  .material__notes .fa-comment-o {\n    font-size: 16px; }\n\n/* Фильм в строчку и блоком */\n.film-with-back {\n  position: relative;\n  padding-bottom: 20px; }\n  .film-with-back__back {\n    display: block;\n    margin-bottom: 25px;\n    width: 100%;\n    height: 200px;\n    object-fit: cover;\n    background: #eee; }\n    .film-with-back__back:not([src]) {\n      background: #444; }\n  .film-with-back__img {\n    position: absolute;\n    top: 55px;\n    left: 20px;\n    width: 120px;\n    height: 160px;\n    object-fit: cover;\n    background: #fff;\n    box-shadow: 0 7px 20px -5px rgba(0, 0, 0, 0.5);\n    transition: 0.2s; }\n    .film-with-back__img:not([src]) {\n      background-image: url(http://7multik.ru/_nw/0/97894915.jpg);\n      background-size: cover; }\n  .film-with-back__name {\n    display: block; }\n    .film-with-back__name__top {\n      color: #09b82c; }\n    @media (max-width: 600px) {\n      .film-with-back__name__year {\n        display: inline-block !important; } }\n  .film-with-back__info {\n    display: flex;\n    padding: 0 10px 0 20px; }\n  .film-with-back__note {\n    display: flex;\n    margin-left: auto; }\n    .film-with-back__note span {\n      display: none; }\n    .film-with-back__note i {\n      display: inline-block;\n      min-width: 30px;\n      vertical-align: middle;\n      text-align: center;\n      font-size: 18px;\n      color: #666; }\n  .film-with-back__year {\n    min-width: 40px;\n    line-height: 18px;\n    font-size: 10px;\n    color: rgba(128, 128, 128, 0.5); }\n    @media (max-width: 600px) {\n      .film-with-back__year {\n        display: none !important; } }\n  .film-with-back:hover .film-with-back__img {\n    box-shadow: 0 15px 25px -10px rgba(0, 0, 0, 0.5);\n    transform: translateY(-5px); }\n  .film-with-back--expected > *:not(.film-with-back__img) {\n    opacity: 0.4; }\n\n/* Картинка, а внизу текст с подписью */\n.img-block {\n  width: 150px;\n  text-align: center; }\n  .img-block:not(:last-child) {\n    margin-right: 30px; }\n  .img-block img {\n    width: 100%;\n    height: 200px;\n    object-fit: cover;\n    display: block;\n    max-width: 100%;\n    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);\n    margin-bottom: 10px;\n    border-radius: 3px; }\n    .img-block img:not([src]) {\n      background-image: url(http://7multik.ru/_nw/0/97894915.jpg);\n      background-size: cover; }\n  .img-block__title {\n    word-break: normal;\n    line-height: 1.1; }\n  .img-block__note {\n    margin-top: 5px; }\n    .img-block__note__top {\n      color: #09b82c; }\n  .img-block--left a {\n    display: flex;\n    align-items: center;\n    margin-bottom: 15px; }\n    .img-block--left a img {\n      display: block;\n      width: 40px;\n      height: 40px;\n      object-fit: cover;\n      border-radius: 50%;\n      margin-right: 10px; }\n    .img-block--left a .small {\n      margin-top: 3px; }\n\n/* Рейтинг фильма. Используется в .film-with-back */\n.rating {\n  display: flex;\n  margin-left: auto;\n  padding-left: 10px;\n  align-items: flex-start;\n  white-space: nowrap; }\n  .rating__value {\n    text-align: right;\n    color: #fc5630; }\n    .rating__value small {\n      margin-top: 3px;\n      font-size: 11px; }\n    .rating__value--bold {\n      font-weight: 700; }\n  .rating__mark {\n    display: inline-block;\n    width: 30px;\n    margin-left: 10px;\n    padding: 6px 0;\n    color: #fff;\n    background: #fc5630;\n    text-align: center;\n    border-radius: 3px; }\n    .rating__mark--star, .rating__mark--eye {\n      background: transparent;\n      color: #999;\n      font-size: 18px; }\n  .rating .dropdown__main {\n    right: -8px;\n    top: -23px;\n    cursor: default;\n    padding: 10px 15px; }\n    .rating .dropdown__main i {\n      padding: 1px;\n      font-size: 20px; }\n    .rating .dropdown__main .fa-eye, .rating .dropdown__main .fa-eye-slash {\n      color: black; }\n      .rating .dropdown__main .fa-eye--gray, .rating .dropdown__main .fa-eye-slash--gray {\n        color: #999; }\n      .rating .dropdown__main .fa-eye:hover, .rating .dropdown__main .fa-eye-slash:hover {\n        opacity: 0.75; }\n  .rating .hover {\n    color: #fc5630; }\n\n/* Слайдер фильмов */\n.slider {\n  position: relative;\n  overflow: hidden;\n  height: 250px;\n  width: calc(100% + 60px);\n  margin: 0 -30px;\n  padding: 0 30px;\n  padding-bottom: 100px; }\n  @media (max-width: 600px) {\n    .slider {\n      margin: 0;\n      padding-left: 0;\n      padding-right: 0;\n      width: 100%;\n      overflow-y: hidden;\n      overflow-x: auto;\n      box-sizing: content-box;\n      -webkit-overflow-scrolling: touch !important;\n      -ms-overflow-style: -ms-autohiding-scrollbar !important; } }\n  .slider__wrap {\n    height: 250px;\n    width: 100%; }\n    @media (max-width: 600px) {\n      .slider__wrap {\n        overflow: hidden; } }\n  .slider:before, .slider:after {\n    content: \"\";\n    position: absolute;\n    z-index: 1;\n    display: block;\n    top: 0;\n    bottom: 0;\n    width: 50px;\n    opacity: 0.75; }\n    @media (max-width: 600px) {\n      .slider:before, .slider:after {\n        content: none; } }\n  .slider:after {\n    right: 0;\n    background: linear-gradient(to left, white, rgba(255, 255, 255, 0)); }\n  .slider:before {\n    left: 0;\n    background: linear-gradient(to right, #f4f3ef, rgba(255, 255, 255, 0)); }\n  .slider__main {\n    position: absolute;\n    padding-bottom: 20px;\n    display: flex;\n    flex-wrap: nowrap;\n    transform: translateX(0);\n    transition: 0.3s ease-in-out; }\n    @media (max-width: 600px) {\n      .slider__main {\n        padding: 0 15px; } }\n    .slider__main > * {\n      min-width: 150px; }\n  .slider .arrow-right, .slider .arrow-left {\n    position: absolute;\n    z-index: 2;\n    top: 0;\n    bottom: 0;\n    line-height: 200px;\n    opacity: 0; }\n    @media (max-width: 600px) {\n      .slider .arrow-right, .slider .arrow-left {\n        display: none; } }\n    .slider .arrow-right:hover i, .slider .arrow-left:hover i {\n      cursor: pointer;\n      box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.75); }\n    .slider .arrow-right.active, .slider .arrow-left.active {\n      opacity: 1; }\n    .slider .arrow-right i, .slider .arrow-left i {\n      background: #fff;\n      width: 30px;\n      height: 30px;\n      line-height: 30px;\n      display: inline-block;\n      text-align: center;\n      border-radius: 50%;\n      box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.25);\n      transition: 0.2s; }\n  .slider .arrow-right {\n    right: 5px; }\n  .slider .arrow-left {\n    left: 5px; }\n\n/* Таблица */\n.table {\n  display: table; }\n  .table__row {\n    display: table-row; }\n    .table__row > * {\n      display: table-cell;\n      padding-bottom: 10px; }\n  .table__label {\n    color: #999;\n    padding-right: 30px; }\n  .table__value {\n    position: relative;\n    margin-bottom: 10px; }\n    .table__value__note {\n      display: flex; }\n    .table__value .small {\n      margin-top: 3px; }\n    .table__value > span {\n      position: relative;\n      margin-right: 15px; }\n    .table__value > span:after {\n      margin: 0 3px 0 -2px !important; }\n  .table__spoiler {\n    position: absolute;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: #eee;\n    top: -2px;\n    bottom: -2px;\n    left: -3px;\n    right: 0;\n    z-index: 10;\n    border-radius: 3px;\n    transition: 1s 0.5s; }\n    .table__spoiler:after {\n      content: \"\\41E\\441\\442\\43E\\440\\43E\\436\\43D\\43E, \\441\\43F\\43E\\439\\43B\\435\\440\" !important;\n      display: block;\n      font-size: 12px;\n      margin: 0 !important;\n      color: #999; }\n    .table__spoiler:hover {\n      opacity: 0; }\n\n/* Коллекция */\n.collection {\n  flex: 1;\n  max-width: 300px;\n  background: #fff;\n  margin-bottom: 20px;\n  border-radius: 3px; }\n  @media (max-width: 600px) {\n    .collection {\n      max-width: initial; } }\n  .collection__title {\n    height: 150px;\n    color: #fff;\n    box-shadow: inset 0 -30px 50px -10px rgba(0, 0, 0, 0.5), inset 0 0 0 100px rgba(0, 0, 0, 0.25);\n    display: flex;\n    align-items: flex-end;\n    padding: 10px 15px;\n    background-size: cover;\n    border-radius: 3px 3px 0 0; }\n    .collection__title a {\n      word-break: normal; }\n    .collection__title small {\n      margin-top: 5px; }\n  .collection__item {\n    display: flex;\n    justify-content: space-between;\n    margin: 0 10px;\n    padding: 15px 5px; }\n    .collection__item:not(:last-child) {\n      border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .collection__bottom {\n    padding: 7px 15px 3px; }\n  .collection__mark {\n    color: #fa5631; }\n\n/* Выпадающий список */\n.dropdown {\n  position: relative; }\n  .dropdown--btn {\n    border: 1px solid #ddd;\n    padding: 6px 5px;\n    font-size: 12px;\n    border-radius: 3px; }\n    .dropdown--btn .arrow-icon {\n      height: 12px;\n      width: 12px;\n      top: 0 !important;\n      margin-left: 5px; }\n  .dropdown select {\n    display: none; }\n  .dropdown__label {\n    position: relative; }\n    .dropdown__label .arrow-icon {\n      position: relative;\n      right: 0;\n      top: 3px;\n      vertical-align: middle; }\n    .dropdown__label:hover {\n      cursor: pointer; }\n  .dropdown__close {\n    display: inline-block;\n    margin-left: 10px;\n    font-size: 24px;\n    font-weight: 200;\n    color: black; }\n    .dropdown__close:hover {\n      color: #999; }\n  .dropdown.show .dropdown__main {\n    display: block;\n    animation: show 0.2s forwards; }\n  .dropdown.show .arrow-icon:before {\n    transform: rotate(-45deg); }\n  .dropdown.show .arrow-icon:after {\n    transform: rotate(45deg); }\n  .dropdown.hide .dropdown__main {\n    animation: hide 0.2s forwards; }\n  .dropdown__main {\n    display: none;\n    min-width: 120px;\n    background: #fff;\n    color: #000;\n    position: absolute;\n    z-index: 20;\n    margin-top: 12px;\n    right: 0;\n    box-shadow: 0 15px 40px -15px rgba(0, 0, 0, 0.5);\n    border: 0.5px solid #ccc;\n    border-radius: 5px; }\n    .dropdown__main li {\n      align-items: center;\n      padding: 0 5px;\n      font-size: 14px;\n      white-space: nowrap;\n      text-overflow: ellipsis;\n      transition: 0.2s; }\n      .dropdown__main li:not(:last-child) > a, .dropdown__main li:not(:last-child) > span {\n        border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n      .dropdown__main li > a, .dropdown__main li > span {\n        display: flex;\n        align-items: center;\n        padding: 12px 10px;\n        background: none; }\n        .dropdown__main li > a:hover, .dropdown__main li > span:hover {\n          color: inherit; }\n        .dropdown__main li > a i, .dropdown__main li > span i {\n          display: inline-block;\n          margin-right: 10px; }\n      .dropdown__main li.active {\n        color: #fc5630;\n        font-weight: 700; }\n      .dropdown__main li:hover {\n        background: #f5f5f5; }\n      .dropdown__main li:last-child {\n        border-radius: 0 0 5px 5px; }\n      .dropdown__main li:first-child {\n        border-radius: 5px 5px 0 0; }\n        .dropdown__main li:first-child:after {\n          content: \"\";\n          position: absolute;\n          top: -10px;\n          right: 10px;\n          display: block;\n          border-style: solid;\n          border-width: 0 10px 10px 10px;\n          border-color: transparent transparent #fff transparent;\n          transition: 0.2s; }\n        .dropdown__main li:first-child:before {\n          content: \"\";\n          position: absolute;\n          top: -11px;\n          right: 9px;\n          display: block;\n          border-style: solid;\n          border-width: 0 11px 11px 11px;\n          border-color: transparent transparent #ccc transparent;\n          transition: 0.2s; }\n        .dropdown__main li:first-child:hover::after {\n          border-bottom-color: #f5f5f5; }\n    .dropdown__main__gray {\n      color: #999; }\n  .dropdown__count {\n    margin-left: auto;\n    color: #fc5630; }\n    .dropdown__count--black {\n      color: black; }\n  .dropdown__right {\n    margin-left: auto; }\n\n@keyframes show {\n  0% {\n    opacity: 0;\n    display: none; }\n  1% {\n    opacity: 0;\n    display: block; }\n  100% {\n    opacity: 1;\n    display: none; } }\n\n@keyframes hide {\n  0% {\n    opacity: 1;\n    display: block; }\n  99% {\n    opacity: 0;\n    display: block; }\n  100% {\n    opacity: 0;\n    display: none; } }\n\n.modal-mask {\n  position: fixed;\n  z-index: 9998;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: block;\n  transition: opacity .3s ease; }\n  .modal-mask.black .modal-container {\n    background: #000;\n    color: #fff; }\n  .modal-mask.black .tabs__labels a.active {\n    color: #fff; }\n\n.modal__overlay {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: rgba(0, 0, 0, 0.5); }\n\n.modal-wrapper {\n  display: flex;\n  align-items: center;\n  height: 100%; }\n  @media (max-width: 600px) {\n    .modal-wrapper {\n      display: block; } }\n\n.modal-container {\n  position: relative;\n  max-width: 800px;\n  margin: 0px auto;\n  background: #fff;\n  color: #000;\n  border-radius: 5px;\n  box-shadow: 0 15px 28px -5px rgba(0, 0, 0, 0.75);\n  transition: all .3s ease;\n  font-family: Helvetica, Arial, sans-serif; }\n  @media (max-width: 600px) {\n    .modal-container {\n      margin-top: 0; }\n      .modal-container .tabs__labels__wrap {\n        margin: 0 -15px;\n        width: calc(100% + 30px); } }\n\n.modal-header {\n  padding: 20px 40px 0 15px; }\n  .modal-header h2 {\n    font-size: 18px;\n    margin: 0 0 10px; }\n\n.modal-body {\n  padding: 15px 0;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch !important;\n  -ms-overflow-style: -ms-autohiding-scrollbar !important;\n  max-height: 85vh; }\n\n.modal-footer {\n  padding: 5px 0; }\n\n.modal-default-button {\n  position: absolute;\n  top: 20px;\n  right: 20px;\n  color: CurrentColor;\n  opacity: 0.25;\n  font-size: 20px;\n  cursor: pointer; }\n\n.modal-enter, .modal-leave-active {\n  opacity: 0; }\n\n.modal-enter .modal-container, .modal-leave-active .modal-container {\n  transform: scale(1.025); }\n\n.center {\n  max-width: 1300px;\n  margin-left: auto;\n  margin-right: auto;\n  padding-left: 10px;\n  padding-right: 10px; }\n\n/* Чистая разметка */\n.header {\n  display: flex;\n  align-items: center; }\n  .header__center {\n    display: flex;\n    flex: auto; }\n  .header__right {\n    margin-left: auto; }\n\n.search {\n  flex: auto;\n  display: flex; }\n  .search form {\n    flex: auto;\n    display: flex; }\n  .search__text {\n    flex: auto; }\n\n@media (max-width: 600px) {\n  .header__center > .services, .header__center > .search {\n    display: none; } }\n\n.nav {\n  display: flex; }\n  .nav > ul {\n    position: relative;\n    display: flex; }\n    @media (max-width: 600px) {\n      .nav > ul {\n        width: 100%;\n        flex-wrap: wrap;\n        height: 38px;\n        overflow: hidden;\n        transition: 0.2s; } }\n    .nav > ul > li {\n      position: relative;\n      height: 38px;\n      line-height: 38px; }\n      .nav > ul > li > ul {\n        display: none;\n        position: absolute;\n        top: 38px;\n        width: 100%; }\n        .nav > ul > li > ul li {\n          position: relative; }\n          .nav > ul > li > ul li > ul {\n            display: none;\n            position: absolute;\n            left: 100%;\n            top: 0;\n            width: 100%; }\n          @media (min-width: 600px) {\n            .nav > ul > li > ul li:hover > ul {\n              display: block; } }\n      @media (min-width: 600px) {\n        .nav > ul > li:hover > ul {\n          display: block; } }\n  .nav.nav--open > ul {\n    height: 300px; }\n  .nav.nav--open .nav__subtoggle {\n    display: inline-block !important; }\n  @media (max-width: 600px) {\n    .nav__subtoggle {\n      display: none !important; } }\n  .nav__li--open {\n    height: auto !important; }\n    .nav__li--open > ul {\n      top: 0 !important;\n      left: 0 !important;\n      position: relative !important;\n      display: block !important; }\n  .nav__services, .nav__search {\n    display: none; }\n    @media (max-width: 600px) {\n      .nav__services, .nav__search {\n        display: flex;\n        align-items: center; } }\n\n/* Прозрачная шапка */\n.header__transparent .header {\n  background: transparent !important;\n  color: #fff;\n  border: 0; }\n  @media (max-width: 600px) {\n    .header__transparent .header {\n      background: #fff !important;\n      color: #000; } }\n\n.header__transparent .nav {\n  background: transparent !important; }\n  @media (max-width: 600px) {\n    .header__transparent .nav {\n      background: #fff;\n      color: #000; } }\n\n/* Фиксированная шапка */\n.header-wrap + main .main-wrap .main {\n  margin-top: 250px; }\n  @media (max-width: 600px) {\n    .header-wrap + main .main-wrap .main {\n      margin-top: 200px; } }\n\n/* Кастомизация навигации */\n.nav {\n  z-index: 10;\n  position: relative;\n  margin-right: 20px;\n  padding: 0; }\n  .nav > ul > li:not(:last-child) {\n    padding-right: 10px;\n    margin-right: 10px; }\n  .nav__toggle {\n    position: relative;\n    margin-left: auto;\n    height: 38px;\n    line-height: 38px;\n    width: 30px;\n    height: 30px;\n    padding: 7px 0;\n    display: none; }\n    @media (max-width: 600px) {\n      .nav__toggle {\n        display: block; } }\n  .nav__subtoggle {\n    position: absolute;\n    right: 0;\n    display: inline-block;\n    vertical-align: middle;\n    width: 12px;\n    height: 12px;\n    top: 14px; }\n    .nav__subtoggle:before, .nav__subtoggle:after {\n      content: \"\";\n      position: absolute;\n      top: 0;\n      display: block;\n      width: 8px;\n      height: 1px;\n      background: CurrentColor;\n      transition: 0.2s; }\n    .nav__subtoggle:before {\n      left: 0;\n      transform: rotate(45deg); }\n    .nav__subtoggle:after {\n      left: 5px;\n      transform: rotate(-45deg); }\n  @media (min-width: 600px) {\n    .nav > ul ul .nav__subtoggle {\n      transform: rotate(-90deg);\n      top: 10px; } }\n  @media (max-width: 600px) {\n    .nav__li--open > .nav__subtoggle:before {\n      transform: rotate(-45deg); }\n    .nav__li--open > .nav__subtoggle:after {\n      transform: rotate(45deg); } }\n\n/* Кастомизация шапки */\n.header {\n  position: relative;\n  z-index: 2;\n  padding: 10px 30px;\n  background: #fff;\n  color: #000;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1);\n  transition: 0.25s; }\n  .header .dropdown__main {\n    width: 230px; }\n  .header a:hover, .header .link:hover {\n    color: #ddd; }\n\n@media (max-width: 900px) {\n  .header {\n    background: #fff !important;\n    color: #000;\n    padding: 3px 10px; }\n  .nav {\n    position: absolute;\n    top: 100%;\n    width: 100%;\n    left: 0;\n    background: #fff;\n    color: #000;\n    padding: 5px 10px;\n    border-top: 1px solid rgba(80, 80, 80, 0.1);\n    box-shadow: 0 10px 10px -1px rgba(0, 0, 0, 0.15); }\n    .nav li {\n      width: 100%; }\n      .nav li:not(.nav__search):not(:last-child) {\n        border-bottom: 1px solid rgba(128, 128, 128, 0.1); }\n      .nav li a {\n        margin-left: 10px; } }\n\n@media (max-width: 600px) {\n  .nav__search {\n    width: 100%;\n    margin-right: 0 !important; }\n    .nav__search .search {\n      margin-right: 0 !important; } }\n\n.is-sticky header {\n  z-index: 10 !important; }\n  .is-sticky header .header {\n    transition: 0.25s;\n    background: rgba(255, 255, 255, 0.96) !important;\n    color: #000;\n    border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n\n/* Элементы шапки */\n.logo {\n  color: #fc5630;\n  font: 700 24px Verdana;\n  line-height: 38px;\n  margin-right: 20px;\n  transition: 0.2s; }\n  .logo:hover {\n    color: #f53104; }\n\n.search {\n  position: relative;\n  margin-right: 20px; }\n  .search__text {\n    background: none;\n    border: 1px solid rgba(180, 180, 180, 0.5);\n    border-radius: 5px;\n    padding-left: 10px;\n    transition: 0.2s;\n    color: CurrentColor;\n    appearance: none;\n    -webkit-appearance: none; }\n    .search__text:focus, .search__text:active {\n      background: #fff;\n      color: #000; }\n      .search__text:focus ~ *, .search__text:active ~ * {\n        color: #000; }\n      .search__text:focus ~ button:hover, .search__text:active ~ button:hover {\n        opacity: 0.45; }\n  .search__button, .search__button-sliders {\n    position: absolute;\n    color: CurrentColor;\n    background: none;\n    border: 0;\n    top: 0;\n    bottom: 0;\n    padding: 0 6px;\n    transition: 0.2s; }\n  .search__button {\n    right: 30px; }\n  .search__button-sliders {\n    right: 7px; }\n\n.services {\n  line-height: 38px;\n  margin-right: 20px; }\n\n.user {\n  position: relative; }\n  .user__img {\n    width: 35px;\n    border-radius: 50%;\n    border: 1px solid #fff; }\n  .user__notif {\n    position: absolute;\n    display: block;\n    top: -19px;\n    right: 0;\n    width: 7px;\n    height: 7px;\n    border-radius: 50%;\n    background: red; }\n  .user__dropdownfirst {\n    position: relative; }\n    .user__dropdownfirst a {\n      position: relative;\n      font-weight: 700; }\n    .user__dropdownfirst__line {\n      display: block;\n      position: absolute;\n      bottom: -1px;\n      left: 0;\n      height: 2px;\n      width: 100%;\n      background: #000; }\n\n/* Гамбургер */\n.menu-icon {\n  color: currentColor;\n  margin: 10px auto; }\n  .menu-icon, .menu-icon:before, .menu-icon:after {\n    content: '';\n    position: absolute;\n    width: 20px;\n    height: 1px;\n    left: 0;\n    right: 0;\n    background-color: currentColor;\n    transition: top 0.1s 0.2s, transform 0.2s;\n    transform: translateZ(0); }\n  .menu-icon:before {\n    top: -7px; }\n  .menu-icon:after {\n    top: 7px; }\n\n.nav__toggle--open .menu-icon {\n  background: none; }\n  .nav__toggle--open .menu-icon:before {\n    top: 0;\n    transform: rotate(45deg);\n    transition: top 0.1s, transform 0.1s 0.1s; }\n  .nav__toggle--open .menu-icon:after {\n    top: 0;\n    transform: rotate(-45deg);\n    transition: top 0.1s, transform 0.1s 0.1s; }\n\n/*\n  Основные блоки страницы\n*/\n/* Основная информация */\n.info {\n  display: flex; }\n  @media (max-width: 600px) {\n    .info {\n      display: block; } }\n  .info__left {\n    flex: 1;\n    padding: 30px 30px; }\n    @media (max-width: 600px) {\n      .info__left {\n        padding: 45px 15px 10px; } }\n    .info__left > img {\n      display: block;\n      width: 100%;\n      min-width: 300px;\n      margin-bottom: 20px;\n      box-shadow: 0 13px 20px -6px rgba(0, 0, 0, 0.25); }\n      @media (max-width: 600px) {\n        .info__left > img {\n          min-width: initial; } }\n    .info__left .btn-select {\n      margin-right: 5px; }\n    .info__left small {\n      margin: 10px 0 0 15px; }\n  .info__right {\n    flex: 2;\n    padding: 30px 20px 30px 15px;\n    flex: auto; }\n    .info__right .service-text {\n      margin-bottom: 30px; }\n  .info__buttons {\n    display: flex; }\n  .info__notes {\n    margin-bottom: 20px; }\n  .info__rewards {\n    position: relative;\n    display: flex; }\n    .info__rewards > span > img {\n      width: 100%; }\n    .info__rewards:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      left: 0;\n      bottom: -5px;\n      width: 100%;\n      height: 5px;\n      background: rgba(183, 183, 180, 0.2);\n      box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.75), 0 4px 5px -1px rgba(0, 0, 0, 0.25); }\n\n/* Биография */\n.biography {\n  padding: 30px 0 15px;\n  margin: 0 20px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .biography__mainp {\n    font-size: 16px;\n    background: rgba(183, 183, 180, 0.2); }\n  .biography__modal {\n    padding: 0 50px 0 40px;\n    background: transparent;\n    font-size: 16px;\n    margin: 15px 0;\n    line-height: 1.5; }\n\n/* Фотографии */\n.photo {\n  padding: 30px 0;\n  margin: 0 20px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .photo img {\n    width: 100%; }\n  .photo__galery {\n    position: relative;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between; }\n    .photo__galery a {\n      position: relative; }\n      .photo__galery a span {\n        display: none; }\n      .photo__galery a:not(:first-child) {\n        display: inline-block;\n        flex: 1; }\n        .photo__galery a:not(:first-child) img {\n          height: 100px;\n          object-fit: cover; }\n      .photo__galery a:first-child {\n        display: block;\n        line-height: 0.8; }\n        .photo__galery a:first-child img {\n          max-height: 320px;\n          object-fit: cover; }\n      .photo__galery a:nth-child(4) span {\n        position: absolute;\n        display: block;\n        top: 0;\n        left: 0;\n        right: 0;\n        line-height: 100px;\n        text-align: center;\n        color: #fff;\n        background: rgba(0, 0, 0, 0.5);\n        cursor: pointer; }\n\n/* Связи */\n.connect {\n  padding: 30px 0 15px;\n  margin: 0 20px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .connect div p:last-of-type {\n    margin-bottom: 15px; }\n\n/* Материалы */\n.materials {\n  padding: 30px 0 15px;\n  margin: 0 20px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n\n/* Сайты */\n.sites {\n  padding: 30px 0;\n  margin: 0 20px; }\n  .sites p {\n    line-height: 1.2;\n    margin-bottom: 20px; }\n    .sites p .link {\n      font-size: 12px; }\n\n/* Табы */\n.tabs__labels {\n  display: flex;\n  padding: 0 30px 100px;\n  box-sizing: content-box; }\n  @media (max-width: 600px) {\n    .tabs__labels {\n      padding: 0 0 100px;\n      white-space: nowrap;\n      overflow-x: auto;\n      overflow-y: hidden;\n      -webkit-overflow-scrolling: touch !important;\n      -ms-overflow-style: -ms-autohiding-scrollbar !important; } }\n  .tabs__labels__wrap {\n    overflow: hidden;\n    height: 36px;\n    width: 100%;\n    border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .tabs__labels.tabs__labels--modal {\n    padding: 0 0 100px; }\n\n.tabs.tabs--column .tabs__item {\n  display: block;\n  padding: 10px 20px; }\n\n.tabs.tabs--column .img-block--left, .tabs.tabs--column .material {\n  display: inline-block;\n  vertical-align: top;\n  width: 50%; }\n  .tabs.tabs--column .img-block--left:nth-child(even), .tabs.tabs--column .material:nth-child(even) {\n    padding-left: 15px; }\n\n.tabs.tabs--2-column .tabs__item {\n  display: flex;\n  padding: 10px 20px; }\n  .tabs.tabs--2-column .tabs__item > * {\n    flex: 50%; }\n\n.tabs.tabs--no-padding .tabs__item {\n  padding: 0; }\n\n.tabs__tab {\n  display: inline-block;\n  padding: 10px 0;\n  background: none;\n  color: #999;\n  font-weight: 600;\n  cursor: pointer; }\n  @media (max-width: 600px) {\n    .tabs__tab {\n      padding: 10px 15px; } }\n  .tabs__tab:not(:last-child) {\n    margin-right: 15px; }\n    @media (max-width: 600px) {\n      .tabs__tab:not(:last-child) {\n        margin-right: 0; } }\n  .tabs__tab.active {\n    color: #000;\n    border-bottom: 2px solid #fa5630; }\n  .tabs__tab.active-white {\n    color: #fff;\n    border-bottom: 2px solid #fa5630; }\n\n.tabs__item {\n  display: flex;\n  padding: 20px 30px; }\n  @media (max-width: 600px) {\n    .tabs__item {\n      padding: 20px 0; } }\n\n/* Статистика */\n.statistics {\n  display: table;\n  width: 250px;\n  margin-right: 20px; }\n  .statistics > div {\n    display: table-row; }\n    .statistics > div > div {\n      display: table-cell;\n      padding-bottom: 10px; }\n      .statistics > div > div p {\n        font-size: 26px;\n        font-weight: 600;\n        margin: 0; }\n    .statistics > div:not(:last-child) > div {\n      border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n    .statistics > div:not(:first-child) > div {\n      padding-top: 10px; }\n  .statistics__main {\n    color: #fc5630; }\n\n/* Список фильмов */\n.films {\n  width: 100%; }\n  @media (max-width: 600px) {\n    .films {\n      padding: 0 15px; } }\n  .films__filters {\n    display: flex;\n    align-items: center;\n    margin-bottom: 30px;\n    font-size: 14px; }\n    @media (max-width: 600px) {\n      .films__filters {\n        align-items: flex-start; } }\n  .films__sort__text {\n    color: #999; }\n    @media (max-width: 600px) {\n      .films__sort__text {\n        display: none; } }\n  .films__sort .dropdown {\n    display: inline-block;\n    margin-right: 10px; }\n    @media (max-width: 600px) {\n      .films__sort .dropdown {\n        margin-bottom: 15px;\n        margin-right: 10px; } }\n    .films__sort .dropdown .dropdown__main {\n      left: 0;\n      right: initial; }\n      .films__sort .dropdown .dropdown__main li:first-child:before {\n        left: 9px;\n        right: initial; }\n      .films__sort .dropdown .dropdown__main li:first-child:after {\n        left: 10px;\n        right: initial; }\n  .films__view {\n    margin-left: auto; }\n    .films__view .dropdown__label {\n      white-space: nowrap; }\n  .films__table {\n    margin: 0 -15px; }\n    .films__table .film-with-back {\n      width: 50%;\n      display: inline-block; }\n      @media (max-width: 600px) {\n        .films__table .film-with-back {\n          display: block;\n          width: 100%; } }\n      .films__table .film-with-back:nth-child(even) {\n        padding-left: 20px; }\n        .films__table .film-with-back:nth-child(even) .film-with-back__img {\n          left: 40px; }\n        @media (max-width: 600px) {\n          .films__table .film-with-back:nth-child(even) {\n            padding-left: 0; }\n            .films__table .film-with-back:nth-child(even) .film-with-back__img {\n              left: 20px; } }\n      .films__table .film-with-back__year {\n        display: none; }\n    .films__table--list {\n      margin: 0; }\n      .films__table--list .film-with-back {\n        display: block;\n        width: 100%;\n        padding-left: 0 !important; }\n        .films__table--list .film-with-back__note span {\n          display: inline-block; }\n        .films__table--list .film-with-back__year {\n          display: block; }\n        .films__table--list .film-with-back__name .link {\n          font-size: 16px; }\n        .films__table--list .film-with-back__name__year {\n          display: none; }\n        .films__table--list .film-with-back__name .middot span:nth-last-child(2):after {\n          display: none; }\n        .films__table--list .film-with-back__back, .films__table--list .film-with-back__img {\n          display: none; }\n        .films__table--list .film-with-back__info {\n          padding: 0; }\n\n/* Коллекции */\n.collections {\n  flex: 2;\n  padding: 20px 30px 20px; }\n  @media (max-width: 600px) {\n    .collections {\n      padding: 20px 15px 20px; } }\n  .collections__main {\n    display: flex; }\n    @media (max-width: 600px) {\n      .collections__main {\n        display: block; } }\n    .collections__main > *:not(:last-child) {\n      margin-right: 20px; }\n      @media (max-width: 600px) {\n        .collections__main > *:not(:last-child) {\n          margin-right: 0; } }\n\n/* Случайный фильм */\n.random-film {\n  position: relative;\n  flex: 1;\n  padding: 20px 15px; }\n  .random-film__reload {\n    position: absolute;\n    right: 30px;\n    top: 25px;\n    font-size: 18px;\n    color: #999 !important; }\n  .random-film .film-with-back {\n    background: #fff; }\n\n/* История */\n.history__header {\n  padding: 30px 30px 0; }\n\n.history__main {\n  padding: 0 30px; }\n  @media (max-width: 600px) {\n    .history__main {\n      padding: 20px 0; } }\n\nbody {\n  background: #f4f3ef;\n  font-size: 14px; }\n\n.background {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 600px;\n  background-position: top 0px center;\n  background-size: cover;\n  box-shadow: inset 0 100px 100px -50px rgba(0, 0, 0, 0.9); }\n  .background__info {\n    padding-top: 200px;\n    text-align: center; }\n    @media (max-width: 900px) {\n      .background__info {\n        padding-top: 190px; } }\n  .background button {\n    margin-bottom: 10px; }\n  @media (max-width: 600px) {\n    .background {\n      background-position: top 90px center;\n      background-size: auto 160px;\n      background-repeat: no-repeat; } }\n\n.main {\n  position: relative;\n  z-index: 1;\n  box-shadow: 0 30px 50px -25px #a29297;\n  padding: 0;\n  border-radius: 7px; }\n\n.footer {\n  display: flex;\n  padding: 50px 30px 100px; }\n  @media (max-width: 600px) {\n    .footer {\n      display: block; } }\n  .footer__col {\n    flex: 1;\n    margin-right: 40px;\n    margin-bottom: 30px; }\n    .footer__col:last-child {\n      flex: initial;\n      margin-left: auto; }\n      .footer__col:last-child a {\n        display: inline-block;\n        color: #fff;\n        background: #aaa;\n        width: 24px;\n        height: 24px;\n        text-align: center;\n        border-radius: 3px; }\n        .footer__col:last-child a i {\n          line-height: 24px; }\n    .footer__col ul li {\n      padding: 5px 0;\n      color: #999;\n      font-size: 14px; }\n\n.footer-bottom {\n  text-align: center;\n  border-top: 1px solid rgba(80, 80, 80, 0.1);\n  padding: 20px 0;\n  color: #999; }\n\n.persona__main {\n  display: flex;\n  background: #fff;\n  border-radius: 7px 7px 0 0; }\n  @media (max-width: 600px) {\n    .persona__main {\n      display: block; } }\n\n.persona__left {\n  flex: 5; }\n\n.persona__right {\n  position: relative;\n  padding-bottom: 65px;\n  border-left: 1px solid rgba(80, 80, 80, 0.1);\n  flex: 2; }\n  @media (max-width: 600px) {\n    .persona__right {\n      border: 0; } }\n\n.persona__bottom {\n  display: flex;\n  padding-bottom: 30px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  @media (max-width: 600px) {\n    .persona__bottom {\n      display: block; } }\n\n.persona__footer {\n  text-align: center;\n  padding: 5px 0 20px; }\n  .persona__footer img {\n    width: 80px;\n    opacity: 0.1; }\n\n.bannerFilm {\n  padding: 20px 0;\n  margin: 5px 20px 0;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .bannerFilm img {\n    width: 100%; }\n\n.banner {\n  padding: 0 30px;\n  margin: 20px 0; }\n  @media (max-width: 600px) {\n    .banner {\n      padding: 0; } }\n\n.correct {\n  position: absolute;\n  bottom: 20px;\n  left: 20px;\n  display: flex;\n  align-items: center; }\n  .correct .btn {\n    display: inline-block;\n    margin-right: 10px; }\n  .correct span {\n    font-size: 11px;\n    color: #999;\n    line-height: 1.2; }\n\n/* Маленькие корректировки */\n@media (max-width: 600px) {\n  .modal-container {\n    border-radius: 0 !important; } }\n\n.night {\n  background: #161616;\n  color: #fff; }\n  .night header .header, .night .nav {\n    background: #161616;\n    color: #fff !important; }\n  @media (min-width: 600px) {\n    .night .header__transparent .header {\n      background: transparent !important; } }\n  .night .is-sticky .header, .night .is-sticky .nav {\n    background: #161616 !important; }\n  .night .main {\n    box-shadow: 0 30px 50px -20px #000; }\n  .night .persona__main {\n    background: #161616; }\n  .night .persona__info__buttons .btn-round--default {\n    background: transparent;\n    color: #fff; }\n  .night .persona__random .film-with-back {\n    background: #050505; }\n  .night .persona .material__title {\n    background: #161616; }\n  .night .collection, .night .random-film .film-with-back {\n    background: #050505; }\n  .night .slider .arrow-right, .night .slider .arrow-left {\n    color: #000; }\n  .night .slider:before, .night .slider:after {\n    background: none; }\n  .night .tabs__tab.active {\n    color: #fff; }\n  .night .modal-container .tabs__tab.active {\n    color: CurrentColor; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n/* VARIABLES */\n/* pilot.scss v1.0 | Taras Gordienko | sdelal.xyz/pilot.scss */\n/* ADAPTIVE */\n/* HELP-CLASSES */\n/* RESET */\n*, *:after, *:before {\n  box-sizing: border-box; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  vertical-align: baseline; }\n\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1;\n  font-family: -apple-system, Arial, sans-serif; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n  blockquote:before, blockquote:after, q:before, q:after {\n    content: '';\n    content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n/* NORMALIZE */\nimg {\n  max-width: 100%; }\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: -apple-system, Arial, sans-serif;\n  font-size: 100%;\n  line-height: 1.15;\n  margin: 0;\n  outline: 0;\n  padding: 5px 10px; }\n\nselect {\n  margin-left: 15px;\n  border-radius: 0;\n  border: 0;\n  font-size: 12px; }\n\nbutton,\n[type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; }\n  button:hover,\n  [type=\"button\"]:hover,\n  [type=\"reset\"]:hover,\n  [type=\"submit\"]:hover {\n    cursor: pointer; }\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0; }\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; }\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  font: inherit; }\n\n[hidden] {\n  display: none; }\n\n/* LINKS */\na, .link {\n  word-break: break-all;\n  text-decoration: none;\n  color: CurrentColor;\n  background-image: linear-gradient(180deg, CurrentColor 0%, transparent 70%);\n  background-position: 0 100%;\n  background-size: 1px 1px;\n  background-repeat: repeat-x; }\n  a:hover, .link:hover {\n    color: #a03000; }\n\n.links-blue, .links-blue a, .links-blue .link {\n  color: #0064a8; }\n\n.links-light, .links-light a, .links-light .link {\n  background-image: linear-gradient(180deg, CurrentColor 40%, transparent 100%); }\n\n.links-blue:visited .link, .links-light:visited .link {\n  color: #98b8c8; }\n\n.links-blue:hover .link, .links-light:hover .link {\n  color: #a03000; }\n\n.nolink, .nolink:visited, .nolink:hover {\n  color: CurrentColor;\n  background-size: 0; }\n  .nolink .link, .nolink:visited .link, .nolink:hover .link {\n    background-size: 1px 1px; }\n\n.nolink:hover .link {\n  color: #a03000; }\n\n/* Приведение стандартных элементов к нормальному виду */\n/* Заголовки */\nh1 {\n  font-size: 36px;\n  margin-bottom: 40px; }\n  h1 + .sub-h1 {\n    display: block;\n    margin: -30px 0 30px;\n    font-size: 12px;\n    color: #999;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 320px; }\n\nh2 {\n  font-size: 24px;\n  margin-bottom: 25px; }\n  h2 + .sub-h2 {\n    display: block;\n    margin: -20px 0 20px;\n    font-size: 12px;\n    color: #999;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 320px; }\n\nh3 {\n  font-size: 18px;\n  margin-bottom: 10px; }\n\nh5 {\n  font-size: 13px;\n  margin-bottom: 5px; }\n\n/* Текст */\np {\n  margin: 0 0 10px;\n  line-height: 1.3;\n  font-size: 14px; }\n\n/* Инпуты */\n[type=\"radio\"] {\n  position: relative;\n  outline: none !important;\n  border: 1px solid rgba(0, 0, 0, 0.5);\n  border-radius: 50%;\n  box-shadow: inset 0 0 0 0 white;\n  cursor: pointer;\n  font: inherit;\n  height: 1.1rem;\n  width: 1.1rem;\n  -moz-appearance: none;\n  -webkit-appearance: none; }\n  [type=\"radio\"]:checked {\n    background-color: #fc5630;\n    box-shadow: inset 0 0 0 .2em #fff;\n    -webkit-transition: background .15s, box-shadow .1s;\n    transition: background .15s, box-shadow .1s; }\n\n[type=\"checkbox\"] {\n  position: relative;\n  outline: none !important;\n  border: 1px solid rgba(0, 0, 0, 0.25);\n  border-radius: 0.25rem;\n  box-shadow: inset 0 0 0 0 white;\n  cursor: pointer;\n  font: inherit;\n  height: 1.25rem;\n  width: 1.25rem;\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  top: 0.25rem; }\n  [type=\"checkbox\"]:checked:after {\n    content: \"\\2713\";\n    position: absolute;\n    font-size: 1.5rem;\n    font-weight: 600;\n    color: #fc5630;\n    top: -0.75rem;\n    left: 0.1rem; }\n\ninput.switch::before, [type=\"checkbox\"].switch:checked:after {\n  content: \"\"; }\n\ninput.switch {\n  width: 2.5rem;\n  height: 1.3rem;\n  line-height: 2.6em;\n  border-radius: 10rem;\n  padding: 0;\n  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);\n  cursor: pointer;\n  border: none;\n  background: transparent;\n  transition: box-shadow 0.25s ease-in-out, padding 0.15s ease-in-out;\n  transition-delay: .1s, 0s; }\n  input.switch:before {\n    display: inline-block;\n    position: absolute;\n    top: 0;\n    height: 1.5em;\n    width: 1.5em;\n    margin: 0;\n    background-color: #fff;\n    border-radius: 2.1em;\n    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);\n    transition: all .1s ease .1s; }\n  input.switch:checked {\n    transition-delay: 0s, 0s;\n    box-shadow: inset 0 0 0 2.62857em #fc5630 !important;\n    padding-left: 1.175rem; }\n  input.switch:checked:before {\n    box-shadow: inset 0 0 0 1px #fc5630; }\n  input.switch:active:checked::before {\n    margin-left: -0.3em; }\n  input.switch:active:before {\n    width: 1.4em;\n    transition: all .1s ease .05s; }\n\n@keyframes slide-on {\n  0% {\n    padding-left: 0; }\n  60% {\n    padding-left: 1.8rem; }\n  100% {\n    padding-left: 1.7rem; } }\n\n@keyframes slide-off {\n  0% {\n    padding-left: 1.6rem;\n    text-indent: 0; }\n  60% {\n    padding-left: 0;\n    text-indent: -0.2rem; }\n  100% {\n    padding-left: 0;\n    text-indent: 0; } }\n\n.dropdown-select {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  margin-right: 5px; }\n  .dropdown-select select {\n    background-color: #fff;\n    color: #000;\n    font-size: inherit;\n    padding: 6px 5px;\n    padding-right: 25px;\n    border: 1px solid #ddd;\n    margin: 0;\n    border-radius: 3px;\n    text-indent: 0.01px;\n    text-overflow: '';\n    -webkit-appearance: button;\n    font-size: 12px; }\n  .dropdown-select:before, .dropdown-select:after {\n    content: \"\";\n    position: absolute;\n    display: block;\n    pointer-events: none;\n    width: 8px;\n    height: 1px;\n    background: CurrentColor;\n    transition: 0.2s;\n    top: 14px; }\n  .dropdown-select:before {\n    right: 12px;\n    transform: rotate(45deg); }\n  .dropdown-select:after {\n    right: 7px;\n    transform: rotate(-45deg); }\n  .dropdown-select:active:before {\n    transform: rotate(-45deg); }\n  .dropdown-select:active:after {\n    transform: rotate(45deg); }\n\n/* Сервисный текст. ОСТОРОЖНО БЛОК */\n.service-text {\n  display: block;\n  background: rgba(183, 183, 180, 0.2);\n  color: #989795;\n  padding: 10px 5px 10px 15px;\n  font-size: 11px; }\n\n/* Маленький текст, подписи. ОСТОРОЖНО БЛОК */\nsmall, span.small {\n  display: block;\n  font-size: 12px;\n  color: #999;\n  margin-bottom: 5px;\n  margin-top: 3px; }\n\n/* Большой акцидентный текст. ОСТОРОЖНО БЛОК */\nbig, span.big {\n  display: block;\n  font-size: 16px;\n  margin-bottom: 3px; }\n\n/* Точки под заголовком */\n.middot {\n  word-break: normal;\n  line-height: 1.2; }\n  .middot > *:not(:last-child):after {\n    content: \"\\B7\";\n    display: inline-block;\n    margin: 0 3px 0 3px; }\n\n/* Иконка стрелки */\n.arrow-icon {\n  position: absolute;\n  right: 8px;\n  display: inline-block;\n  vertical-align: middle;\n  width: 16px;\n  height: 16px;\n  top: 14px; }\n  .arrow-icon:before {\n    content: \"\";\n    position: absolute;\n    top: 5px;\n    left: 0;\n    display: block;\n    width: 8px;\n    height: 1px;\n    background: CurrentColor;\n    transform: rotate(45deg);\n    transition: 0.2s; }\n  .arrow-icon:after {\n    content: \"\";\n    position: absolute;\n    top: 5px;\n    left: 5px;\n    display: block;\n    width: 8px;\n    height: 1px;\n    background: CurrentColor;\n    transform: rotate(-45deg);\n    transition: 0.2s; }\n  .arrow-icon.active:before {\n    transform: rotate(-45deg); }\n  .arrow-icon.active:after {\n    transform: rotate(45deg); }\n  .arrow-icon:hover {\n    color: #999;\n    cursor: pointer; }\n\n/* Обычная кнопка */\n.btn {\n  border: 1px solid rgba(128, 128, 128, 0.5);\n  background: transparent;\n  border-radius: 4px;\n  padding: 5px 12px;\n  color: #999;\n  transition: 0.2s; }\n  .btn.small {\n    font-size: 12px; }\n  .btn:hover {\n    background: #f2f2f2; }\n\n/* Кнопка с закругленными */\n.btn-round {\n  position: relative;\n  border: 0;\n  border-radius: 100px;\n  padding: 8px 15px;\n  font-size: 14px;\n  transition: 0.2s; }\n  .btn-round--default {\n    color: #000;\n    background: rgba(255, 255, 255, 0.85);\n    border: 1px solid rgba(128, 128, 128, 0.25); }\n    .btn-round--default:hover {\n      background: rgba(230, 230, 230, 0.85); }\n  .btn-round--main {\n    background: #fc5630;\n    color: #fff; }\n    .btn-round--main:hover {\n      background: #f53104; }\n\n/* Небольшая служебная кнопка */\n.btn-mini {\n  border: 0;\n  background: rgba(183, 183, 180, 0.2);\n  color: #989795;\n  font-size: 11px;\n  padding: 4px 10px;\n  transition: 0.2s; }\n  .btn-mini:hover {\n    background: rgba(171, 171, 167, 0.2); }\n\n/* Кнопка со стрелкой */\n.btn-select {\n  position: relative;\n  display: inline-block; }\n  .btn-select button {\n    padding-right: 33px; }\n  .btn-select .arrow-icon {\n    position: absolute;\n    top: 12px;\n    right: 10px; }\n\n/* Кнопка, которая открывает спойлер */\n.btn-toggle--active .fa-heart {\n  color: #fc5630; }\n\n.btn-spoiler-open:after {\n  content: \"\\41F\\43E\\43A\\430\\437\\430\\442\\44C   \\435\\449\\435   \\2193\"; }\n\n.show > .btn-spoiler-open:after {\n  content: \"\\421\\43A\\440\\44B\\442\\44C   \\2191\"; }\n\n/*\n  Элементы\n*/\n/* Материал */\n.material {\n  display: block;\n  margin-bottom: 25px; }\n  .material__header {\n    position: relative;\n    display: block; }\n  .material__img {\n    display: block;\n    margin-bottom: 10px;\n    height: 230px;\n    width: 100%;\n    object-fit: cover;\n    border-radius: 3px; }\n  .material__title {\n    position: absolute;\n    bottom: 0;\n    width: 80%;\n    display: block;\n    padding: 7px 7px 0 0;\n    font-weight: 600;\n    font-size: 18px;\n    line-height: 1.4;\n    background: #fff;\n    word-break: normal; }\n  .material__text {\n    display: block;\n    margin-bottom: 5px;\n    line-height: 1.3; }\n  .material__notes .fa-comment-o {\n    font-size: 16px; }\n\n/* Фильм в строчку и блоком */\n.film-with-back {\n  position: relative;\n  padding-bottom: 20px; }\n  .film-with-back__back {\n    display: block;\n    margin-bottom: 25px;\n    width: 100%;\n    height: 200px;\n    object-fit: cover;\n    background: #eee; }\n    .film-with-back__back:not([src]) {\n      background: #444; }\n  .film-with-back__img {\n    position: absolute;\n    top: 55px;\n    left: 20px;\n    width: 120px;\n    height: 160px;\n    object-fit: cover;\n    background: #fff;\n    box-shadow: 0 7px 20px -5px rgba(0, 0, 0, 0.5);\n    transition: 0.2s; }\n    .film-with-back__img:not([src]) {\n      background-image: url(http://7multik.ru/_nw/0/97894915.jpg);\n      background-size: cover; }\n  .film-with-back__name {\n    display: block; }\n    .film-with-back__name__top {\n      color: #09b82c; }\n    @media (max-width: 600px) {\n      .film-with-back__name__year {\n        display: inline-block !important; } }\n  .film-with-back__info {\n    display: flex;\n    padding: 0 10px 0 20px; }\n  .film-with-back__note {\n    display: flex;\n    margin-left: auto; }\n    .film-with-back__note span {\n      display: none; }\n    .film-with-back__note i {\n      display: inline-block;\n      min-width: 30px;\n      vertical-align: middle;\n      text-align: center;\n      font-size: 18px;\n      color: #666; }\n  .film-with-back__year {\n    min-width: 40px;\n    line-height: 18px;\n    font-size: 10px;\n    color: rgba(128, 128, 128, 0.5); }\n    @media (max-width: 600px) {\n      .film-with-back__year {\n        display: none !important; } }\n  .film-with-back:hover .film-with-back__img {\n    box-shadow: 0 15px 25px -10px rgba(0, 0, 0, 0.5);\n    transform: translateY(-5px); }\n  .film-with-back--expected > *:not(.film-with-back__img) {\n    opacity: 0.4; }\n\n/* Картинка, а внизу текст с подписью */\n.img-block {\n  width: 150px;\n  text-align: center; }\n  .img-block:not(:last-child) {\n    margin-right: 30px; }\n  .img-block img {\n    width: 100%;\n    height: 200px;\n    object-fit: cover;\n    display: block;\n    max-width: 100%;\n    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);\n    margin-bottom: 10px;\n    border-radius: 3px; }\n    .img-block img:not([src]) {\n      background-image: url(http://7multik.ru/_nw/0/97894915.jpg);\n      background-size: cover; }\n  .img-block__title {\n    word-break: normal;\n    line-height: 1.1; }\n  .img-block__note {\n    margin-top: 5px; }\n    .img-block__note__top {\n      color: #09b82c; }\n  .img-block--left a {\n    display: flex;\n    align-items: center;\n    margin-bottom: 15px; }\n    .img-block--left a img {\n      display: block;\n      width: 40px;\n      height: 40px;\n      object-fit: cover;\n      border-radius: 50%;\n      margin-right: 10px; }\n    .img-block--left a .small {\n      margin-top: 3px; }\n\n/* Рейтинг фильма. Используется в .film-with-back */\n.rating {\n  display: flex;\n  margin-left: auto;\n  padding-left: 10px;\n  align-items: flex-start;\n  white-space: nowrap; }\n  .rating__value {\n    text-align: right;\n    color: #fc5630; }\n    .rating__value small {\n      margin-top: 3px;\n      font-size: 11px; }\n    .rating__value--bold {\n      font-weight: 700; }\n  .rating__mark {\n    display: inline-block;\n    width: 30px;\n    margin-left: 10px;\n    padding: 6px 0;\n    color: #fff;\n    background: #fc5630;\n    text-align: center;\n    border-radius: 3px; }\n    .rating__mark--star, .rating__mark--eye {\n      background: transparent;\n      color: #999;\n      font-size: 18px; }\n  .rating .dropdown__main {\n    right: -8px;\n    top: -23px;\n    cursor: default;\n    padding: 10px 15px; }\n    .rating .dropdown__main i {\n      padding: 1px;\n      font-size: 20px; }\n    .rating .dropdown__main .fa-eye, .rating .dropdown__main .fa-eye-slash {\n      color: black; }\n      .rating .dropdown__main .fa-eye--gray, .rating .dropdown__main .fa-eye-slash--gray {\n        color: #999; }\n      .rating .dropdown__main .fa-eye:hover, .rating .dropdown__main .fa-eye-slash:hover {\n        opacity: 0.75; }\n  .rating .hover {\n    color: #fc5630; }\n\n/* Слайдер фильмов */\n.slider {\n  position: relative;\n  overflow: hidden;\n  height: 250px;\n  width: calc(100% + 60px);\n  margin: 0 -30px;\n  padding: 0 30px;\n  padding-bottom: 100px; }\n  @media (max-width: 600px) {\n    .slider {\n      margin: 0;\n      padding-left: 0;\n      padding-right: 0;\n      width: 100%;\n      overflow-y: hidden;\n      overflow-x: auto;\n      box-sizing: content-box;\n      -webkit-overflow-scrolling: touch !important;\n      -ms-overflow-style: -ms-autohiding-scrollbar !important; } }\n  .slider__wrap {\n    height: 250px;\n    width: 100%; }\n    @media (max-width: 600px) {\n      .slider__wrap {\n        overflow: hidden; } }\n  .slider:before, .slider:after {\n    content: \"\";\n    position: absolute;\n    z-index: 1;\n    display: block;\n    top: 0;\n    bottom: 0;\n    width: 50px;\n    opacity: 0.75; }\n    @media (max-width: 600px) {\n      .slider:before, .slider:after {\n        content: none; } }\n  .slider:after {\n    right: 0;\n    background: linear-gradient(to left, white, rgba(255, 255, 255, 0)); }\n  .slider:before {\n    left: 0;\n    background: linear-gradient(to right, #f4f3ef, rgba(255, 255, 255, 0)); }\n  .slider__main {\n    position: absolute;\n    padding-bottom: 20px;\n    display: flex;\n    flex-wrap: nowrap;\n    transform: translateX(0);\n    transition: 0.3s ease-in-out; }\n    @media (max-width: 600px) {\n      .slider__main {\n        padding: 0 15px; } }\n    .slider__main > * {\n      min-width: 150px; }\n  .slider .arrow-right, .slider .arrow-left {\n    position: absolute;\n    z-index: 2;\n    top: 0;\n    bottom: 0;\n    line-height: 200px;\n    opacity: 0; }\n    @media (max-width: 600px) {\n      .slider .arrow-right, .slider .arrow-left {\n        display: none; } }\n    .slider .arrow-right:hover i, .slider .arrow-left:hover i {\n      cursor: pointer;\n      box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.75); }\n    .slider .arrow-right.active, .slider .arrow-left.active {\n      opacity: 1; }\n    .slider .arrow-right i, .slider .arrow-left i {\n      background: #fff;\n      width: 30px;\n      height: 30px;\n      line-height: 30px;\n      display: inline-block;\n      text-align: center;\n      border-radius: 50%;\n      box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.25);\n      transition: 0.2s; }\n  .slider .arrow-right {\n    right: 5px; }\n  .slider .arrow-left {\n    left: 5px; }\n\n/* Таблица */\n.table {\n  display: table; }\n  .table__row {\n    display: table-row; }\n    .table__row > * {\n      display: table-cell;\n      padding-bottom: 10px; }\n  .table__label {\n    color: #999;\n    padding-right: 30px; }\n  .table__value {\n    position: relative;\n    margin-bottom: 10px; }\n    .table__value__note {\n      display: flex; }\n    .table__value .small {\n      margin-top: 3px; }\n    .table__value > span {\n      position: relative;\n      margin-right: 15px; }\n    .table__value > span:after {\n      margin: 0 3px 0 -2px !important; }\n  .table__spoiler {\n    position: absolute;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: #eee;\n    top: -2px;\n    bottom: -2px;\n    left: -3px;\n    right: 0;\n    z-index: 10;\n    border-radius: 3px;\n    transition: 1s 0.5s; }\n    .table__spoiler:after {\n      content: \"\\41E\\441\\442\\43E\\440\\43E\\436\\43D\\43E, \\441\\43F\\43E\\439\\43B\\435\\440\" !important;\n      display: block;\n      font-size: 12px;\n      margin: 0 !important;\n      color: #999; }\n    .table__spoiler:hover {\n      opacity: 0; }\n\n/* Коллекция */\n.collection {\n  flex: 1;\n  max-width: 300px;\n  background: #fff;\n  margin-bottom: 20px;\n  border-radius: 3px; }\n  @media (max-width: 600px) {\n    .collection {\n      max-width: initial; } }\n  .collection__title {\n    height: 150px;\n    color: #fff;\n    box-shadow: inset 0 -30px 50px -10px rgba(0, 0, 0, 0.5), inset 0 0 0 100px rgba(0, 0, 0, 0.25);\n    display: flex;\n    align-items: flex-end;\n    padding: 10px 15px;\n    background-size: cover;\n    border-radius: 3px 3px 0 0; }\n    .collection__title a {\n      word-break: normal; }\n    .collection__title small {\n      margin-top: 5px; }\n  .collection__item {\n    display: flex;\n    justify-content: space-between;\n    margin: 0 10px;\n    padding: 15px 5px; }\n    .collection__item:not(:last-child) {\n      border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .collection__bottom {\n    padding: 7px 15px 3px; }\n  .collection__mark {\n    color: #fa5631; }\n\n/* Выпадающий список */\n.dropdown {\n  position: relative; }\n  .dropdown--btn {\n    border: 1px solid #ddd;\n    padding: 6px 5px;\n    font-size: 12px;\n    border-radius: 3px; }\n    .dropdown--btn .arrow-icon {\n      height: 12px;\n      width: 12px;\n      top: 0 !important;\n      margin-left: 5px; }\n  .dropdown select {\n    display: none; }\n  .dropdown__label {\n    position: relative; }\n    .dropdown__label .arrow-icon {\n      position: relative;\n      right: 0;\n      top: 3px;\n      vertical-align: middle; }\n    .dropdown__label:hover {\n      cursor: pointer; }\n  .dropdown__close {\n    display: inline-block;\n    margin-left: 10px;\n    font-size: 24px;\n    font-weight: 200;\n    color: black; }\n    .dropdown__close:hover {\n      color: #999; }\n  .dropdown.show .dropdown__main {\n    display: block;\n    animation: show 0.2s forwards; }\n  .dropdown.show .arrow-icon:before {\n    transform: rotate(-45deg); }\n  .dropdown.show .arrow-icon:after {\n    transform: rotate(45deg); }\n  .dropdown.hide .dropdown__main {\n    animation: hide 0.2s forwards; }\n  .dropdown__main {\n    display: none;\n    min-width: 120px;\n    background: #fff;\n    color: #000;\n    position: absolute;\n    z-index: 20;\n    margin-top: 12px;\n    right: 0;\n    box-shadow: 0 15px 40px -15px rgba(0, 0, 0, 0.5);\n    border: 0.5px solid #ccc;\n    border-radius: 5px; }\n    .dropdown__main li {\n      align-items: center;\n      padding: 0 5px;\n      font-size: 14px;\n      white-space: nowrap;\n      text-overflow: ellipsis;\n      transition: 0.2s; }\n      .dropdown__main li:not(:last-child) > a, .dropdown__main li:not(:last-child) > span {\n        border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n      .dropdown__main li > a, .dropdown__main li > span {\n        display: flex;\n        align-items: center;\n        padding: 12px 10px;\n        background: none; }\n        .dropdown__main li > a:hover, .dropdown__main li > span:hover {\n          color: inherit; }\n        .dropdown__main li > a i, .dropdown__main li > span i {\n          display: inline-block;\n          margin-right: 10px; }\n      .dropdown__main li.active {\n        color: #fc5630;\n        font-weight: 700; }\n      .dropdown__main li:hover {\n        background: #f5f5f5; }\n      .dropdown__main li:last-child {\n        border-radius: 0 0 5px 5px; }\n      .dropdown__main li:first-child {\n        border-radius: 5px 5px 0 0; }\n        .dropdown__main li:first-child:after {\n          content: \"\";\n          position: absolute;\n          top: -10px;\n          right: 10px;\n          display: block;\n          border-style: solid;\n          border-width: 0 10px 10px 10px;\n          border-color: transparent transparent #fff transparent;\n          transition: 0.2s; }\n        .dropdown__main li:first-child:before {\n          content: \"\";\n          position: absolute;\n          top: -11px;\n          right: 9px;\n          display: block;\n          border-style: solid;\n          border-width: 0 11px 11px 11px;\n          border-color: transparent transparent #ccc transparent;\n          transition: 0.2s; }\n        .dropdown__main li:first-child:hover::after {\n          border-bottom-color: #f5f5f5; }\n    .dropdown__main__gray {\n      color: #999; }\n  .dropdown__count {\n    margin-left: auto;\n    color: #fc5630; }\n    .dropdown__count--black {\n      color: black; }\n  .dropdown__right {\n    margin-left: auto; }\n\n@keyframes show {\n  0% {\n    opacity: 0;\n    display: none; }\n  1% {\n    opacity: 0;\n    display: block; }\n  100% {\n    opacity: 1;\n    display: none; } }\n\n@keyframes hide {\n  0% {\n    opacity: 1;\n    display: block; }\n  99% {\n    opacity: 0;\n    display: block; }\n  100% {\n    opacity: 0;\n    display: none; } }\n\n/* Модальное окно */\n.modal-mask {\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: block;\n  transition: opacity .3s ease; }\n  .modal-mask.black .modal-container {\n    background: #000;\n    color: #fff; }\n  .modal-mask.black .tabs__labels a.active {\n    color: #fff; }\n\n.modal__overlay {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: rgba(0, 0, 0, 0.5); }\n\n.modal-wrapper {\n  display: flex;\n  align-items: center;\n  height: 100%; }\n  @media (max-width: 600px) {\n    .modal-wrapper {\n      display: block; } }\n\n.modal-container {\n  position: relative;\n  min-width: 50%;\n  max-width: 800px;\n  margin: 0px auto;\n  background: #fff;\n  color: #000;\n  border-radius: 5px;\n  box-shadow: 0 15px 28px -5px rgba(0, 0, 0, 0.75);\n  transition: all .3s ease;\n  font-family: Helvetica, Arial, sans-serif; }\n  @media (max-width: 600px) {\n    .modal-container {\n      margin-top: 0; }\n      .modal-container .tabs__labels__wrap {\n        margin: 0 -15px;\n        width: calc(100% + 30px); } }\n\n.modal-header {\n  padding: 20px 40px 0 15px; }\n  .modal-header h2 {\n    font-size: 18px;\n    margin: 0 0 10px; }\n\n.modal-body {\n  padding: 15px 0;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch !important;\n  -ms-overflow-style: -ms-autohiding-scrollbar !important;\n  max-height: 85vh; }\n\n.modal-footer {\n  padding: 5px 0; }\n\n.modal-default-button {\n  position: absolute;\n  top: 20px;\n  right: 20px;\n  color: CurrentColor;\n  opacity: 0.25;\n  font-size: 20px;\n  cursor: pointer; }\n\n.modal-enter, .modal-leave-active {\n  opacity: 0; }\n\n.modal-enter .modal-container, .modal-leave-active .modal-container {\n  transform: scale(1.025); }\n\n.center {\n  max-width: 1300px;\n  margin-left: auto;\n  margin-right: auto;\n  padding-left: 10px;\n  padding-right: 10px; }\n\n/* Чистая разметка */\n.header {\n  display: flex;\n  align-items: center; }\n  .header__center {\n    display: flex;\n    flex: auto; }\n  .header__right {\n    margin-left: auto; }\n\n.search {\n  flex: auto;\n  display: flex; }\n  .search form {\n    flex: auto;\n    display: flex; }\n  .search__text {\n    flex: auto; }\n\n@media (max-width: 600px) {\n  .header__center > .services, .header__center > .search {\n    display: none; } }\n\n.nav {\n  display: flex; }\n  .nav > ul {\n    position: relative;\n    display: flex; }\n    @media (max-width: 600px) {\n      .nav > ul {\n        width: 100%;\n        flex-wrap: wrap;\n        height: 38px;\n        overflow: hidden;\n        transition: 0.2s; } }\n    .nav > ul > li {\n      position: relative;\n      height: 38px;\n      line-height: 38px; }\n      .nav > ul > li > ul {\n        display: none;\n        position: absolute;\n        top: 38px;\n        width: 100%; }\n        .nav > ul > li > ul li {\n          position: relative; }\n          .nav > ul > li > ul li > ul {\n            display: none;\n            position: absolute;\n            left: 100%;\n            top: 0;\n            width: 100%; }\n          @media (min-width: 600px) {\n            .nav > ul > li > ul li:hover > ul {\n              display: block; } }\n      @media (min-width: 600px) {\n        .nav > ul > li:hover > ul {\n          display: block; } }\n  .nav.nav--open > ul {\n    height: 300px; }\n  .nav.nav--open .nav__subtoggle {\n    display: inline-block !important; }\n  @media (max-width: 600px) {\n    .nav__subtoggle {\n      display: none !important; } }\n  .nav__li--open {\n    height: auto !important; }\n    .nav__li--open > ul {\n      top: 0 !important;\n      left: 0 !important;\n      position: relative !important;\n      display: block !important; }\n  .nav__services, .nav__search {\n    display: none; }\n    @media (max-width: 600px) {\n      .nav__services, .nav__search {\n        display: flex;\n        align-items: center; } }\n\n/* Прозрачная шапка */\n.header__transparent .header {\n  background: transparent !important;\n  color: #fff;\n  border: 0; }\n  @media (max-width: 600px) {\n    .header__transparent .header {\n      background: #fff !important;\n      color: #000; } }\n\n.header__transparent .nav {\n  background: transparent; }\n  @media (max-width: 600px) {\n    .header__transparent .nav {\n      background: #fff;\n      color: #000; } }\n\n/* Фиксированная шапка */\nheader + main .main-wrap .main {\n  margin-top: 250px; }\n  @media (max-width: 600px) {\n    header + main .main-wrap .main {\n      margin-top: 200px; } }\n\n/* Кастомизация навигации */\n.nav {\n  z-index: 10;\n  position: relative;\n  margin-right: 20px;\n  padding: 0; }\n  .nav > ul > li:not(:last-child) {\n    padding-right: 10px;\n    margin-right: 10px; }\n  .nav__toggle {\n    position: relative;\n    margin-left: auto;\n    height: 38px;\n    line-height: 38px;\n    width: 30px;\n    height: 30px;\n    padding: 7px 0;\n    display: none; }\n    @media (max-width: 600px) {\n      .nav__toggle {\n        display: block; } }\n  .nav__subtoggle {\n    position: absolute;\n    right: 0;\n    display: inline-block;\n    vertical-align: middle;\n    width: 12px;\n    height: 12px;\n    top: 14px; }\n    .nav__subtoggle:before, .nav__subtoggle:after {\n      content: \"\";\n      position: absolute;\n      top: 0;\n      display: block;\n      width: 8px;\n      height: 1px;\n      background: CurrentColor;\n      transition: 0.2s; }\n    .nav__subtoggle:before {\n      left: 0;\n      transform: rotate(45deg); }\n    .nav__subtoggle:after {\n      left: 5px;\n      transform: rotate(-45deg); }\n  @media (min-width: 600px) {\n    .nav > ul ul .nav__subtoggle {\n      transform: rotate(-90deg);\n      top: 10px; } }\n  @media (max-width: 600px) {\n    .nav__li--open > .nav__subtoggle:before {\n      transform: rotate(-45deg); }\n    .nav__li--open > .nav__subtoggle:after {\n      transform: rotate(45deg); } }\n\n/* Кастомизация шапки */\n.header {\n  position: relative;\n  z-index: 2;\n  padding: 10px 30px;\n  background: #fff;\n  color: #000;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1);\n  transition: 0.25s; }\n  .header .dropdown__main {\n    width: 230px; }\n  .header a:hover, .header .link:hover {\n    color: #ddd; }\n\n@media (max-width: 900px) {\n  .header {\n    background: #fff !important;\n    color: #000;\n    padding: 3px 10px; }\n  .nav {\n    position: absolute;\n    top: 100%;\n    width: 100%;\n    left: 0;\n    background: #fff;\n    color: #000;\n    padding: 5px 10px;\n    border-top: 1px solid rgba(80, 80, 80, 0.1);\n    box-shadow: 0 10px 10px -1px rgba(0, 0, 0, 0.15); }\n    .nav li {\n      width: 100%; }\n      .nav li:not(.nav__search):not(:last-child) {\n        border-bottom: 1px solid rgba(128, 128, 128, 0.1); }\n      .nav li a {\n        margin-left: 10px; } }\n\n@media (max-width: 600px) {\n  .nav__search {\n    width: 100%;\n    margin-right: 0 !important; }\n    .nav__search .search {\n      margin-right: 0 !important; } }\n\n.is-sticky header {\n  z-index: 10 !important; }\n  .is-sticky header .header {\n    transition: 0.25s;\n    background: rgba(255, 255, 255, 0.96) !important;\n    color: #000;\n    border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n\n/* Элементы шапки */\n.logo {\n  color: #fc5630;\n  font: 700 24px Verdana;\n  line-height: 38px;\n  margin-right: 20px;\n  transition: 0.2s; }\n  .logo:hover {\n    color: #f53104; }\n\n.search {\n  position: relative;\n  margin-right: 20px; }\n  .search__text {\n    background: none;\n    border: 1px solid rgba(180, 180, 180, 0.5);\n    border-radius: 5px;\n    padding-left: 10px;\n    transition: 0.2s;\n    color: CurrentColor;\n    appearance: none;\n    -webkit-appearance: none; }\n    .search__text:focus, .search__text:active {\n      background: #fff;\n      color: #000; }\n      .search__text:focus ~ *, .search__text:active ~ * {\n        color: #000; }\n      .search__text:focus ~ button:hover, .search__text:active ~ button:hover {\n        opacity: 0.45; }\n  .search__button, .search__button-sliders {\n    position: absolute;\n    color: CurrentColor;\n    background: none;\n    border: 0;\n    top: 0;\n    bottom: 0;\n    padding: 0 6px;\n    transition: 0.2s; }\n  .search__button {\n    right: 30px; }\n  .search__button-sliders {\n    right: 7px; }\n\n.services {\n  line-height: 38px;\n  margin-right: 20px; }\n\n.user {\n  position: relative; }\n  .user__img {\n    width: 35px;\n    border-radius: 50%;\n    border: 1px solid #fff; }\n  .user__notif {\n    position: absolute;\n    display: block;\n    top: -19px;\n    right: 0;\n    width: 7px;\n    height: 7px;\n    border-radius: 50%;\n    background: red; }\n  .user__dropdownfirst {\n    position: relative; }\n    .user__dropdownfirst a {\n      position: relative;\n      font-weight: 700; }\n    .user__dropdownfirst__line {\n      display: block;\n      position: absolute;\n      bottom: -1px;\n      left: 0;\n      height: 2px;\n      width: 100%;\n      background: #000; }\n\n/* Гамбургер */\n.menu-icon {\n  color: currentColor;\n  margin: 10px auto; }\n  .menu-icon, .menu-icon:before, .menu-icon:after {\n    content: '';\n    position: absolute;\n    width: 20px;\n    height: 1px;\n    left: 0;\n    right: 0;\n    background-color: currentColor;\n    transition: top 0.1s 0.2s, transform 0.2s;\n    transform: translateZ(0); }\n  .menu-icon:before {\n    top: -7px; }\n  .menu-icon:after {\n    top: 7px; }\n\n.nav__toggle--open .menu-icon {\n  background: none; }\n  .nav__toggle--open .menu-icon:before {\n    top: 0;\n    transform: rotate(45deg);\n    transition: top 0.1s, transform 0.1s 0.1s; }\n  .nav__toggle--open .menu-icon:after {\n    top: 0;\n    transform: rotate(-45deg);\n    transition: top 0.1s, transform 0.1s 0.1s; }\n\n/*\n  Основные блоки страницы\n*/\n/* Основная информация */\n.info {\n  display: flex; }\n  @media (max-width: 600px) {\n    .info {\n      display: block; } }\n  .info__left {\n    flex: 1;\n    padding: 30px 30px; }\n    @media (max-width: 600px) {\n      .info__left {\n        padding: 45px 15px 10px; } }\n    .info__left > img {\n      display: block;\n      width: 100%;\n      min-width: 300px;\n      margin-bottom: 20px;\n      box-shadow: 0 13px 20px -6px rgba(0, 0, 0, 0.25); }\n      @media (max-width: 600px) {\n        .info__left > img {\n          min-width: initial; } }\n    .info__left .btn-select {\n      margin-right: 5px; }\n    .info__left small {\n      margin: 10px 0 0 15px; }\n  .info__right {\n    flex: 2;\n    padding: 30px 20px 30px 15px;\n    flex: auto; }\n    .info__right .service-text {\n      margin-bottom: 30px; }\n  .info__buttons {\n    display: flex; }\n  .info__notes {\n    margin-bottom: 20px; }\n  .info__rewards {\n    position: relative;\n    display: flex; }\n    .info__rewards > span > img {\n      width: 100%; }\n    .info__rewards:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      left: 0;\n      bottom: -5px;\n      width: 100%;\n      height: 5px;\n      background: rgba(183, 183, 180, 0.2);\n      box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.75), 0 4px 5px -1px rgba(0, 0, 0, 0.25); }\n\n/* Биография */\n.biography {\n  padding: 30px 0 15px;\n  margin: 0 20px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .biography__mainp {\n    font-size: 16px;\n    background: rgba(183, 183, 180, 0.2); }\n  .biography__modal {\n    padding: 0 50px 0 40px;\n    background: transparent;\n    font-size: 16px;\n    margin: 15px 0;\n    line-height: 1.5; }\n\n/* Фотографии */\n.photo {\n  padding: 30px 0;\n  margin: 0 20px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .photo img {\n    width: 100%; }\n  .photo__galery {\n    position: relative;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between; }\n    .photo__galery a {\n      position: relative; }\n      .photo__galery a span {\n        display: none; }\n      .photo__galery a:not(:first-child) {\n        display: inline-block;\n        flex: 1; }\n        .photo__galery a:not(:first-child) img {\n          height: 100px;\n          object-fit: cover; }\n      .photo__galery a:first-child {\n        display: block;\n        line-height: 0.8; }\n        .photo__galery a:first-child img {\n          max-height: 320px;\n          object-fit: cover; }\n      .photo__galery a:nth-child(4) span {\n        position: absolute;\n        display: block;\n        top: 0;\n        left: 0;\n        right: 0;\n        line-height: 100px;\n        text-align: center;\n        color: #fff;\n        background: rgba(0, 0, 0, 0.5);\n        cursor: pointer; }\n\n/* Связи */\n.connect {\n  padding: 30px 0 15px;\n  margin: 0 20px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .connect div p:last-of-type {\n    margin-bottom: 15px; }\n\n/* Материалы */\n.materials {\n  padding: 30px 0 15px;\n  margin: 0 20px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n\n/* Сайты */\n.sites {\n  padding: 30px 0;\n  margin: 0 20px; }\n  .sites p {\n    line-height: 1.2;\n    margin-bottom: 20px; }\n    .sites p .link {\n      font-size: 12px; }\n\n/* Табы */\n.tabs__labels {\n  display: flex;\n  padding: 0 30px 100px;\n  box-sizing: content-box; }\n  @media (max-width: 600px) {\n    .tabs__labels {\n      padding: 0 0 100px;\n      white-space: nowrap;\n      overflow-x: auto;\n      overflow-y: hidden;\n      -webkit-overflow-scrolling: touch !important;\n      -ms-overflow-style: -ms-autohiding-scrollbar !important; } }\n  .tabs__labels__wrap {\n    overflow: hidden;\n    height: 36px;\n    width: 100%;\n    border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .tabs__labels.tabs__labels--modal {\n    padding: 0 0 100px; }\n\n.tabs.tabs--column .tabs__item {\n  display: block;\n  padding: 10px 20px; }\n\n.tabs.tabs--column .img-block--left, .tabs.tabs--column .material {\n  display: inline-block;\n  vertical-align: top;\n  width: 50%; }\n  .tabs.tabs--column .img-block--left:nth-child(even), .tabs.tabs--column .material:nth-child(even) {\n    padding-left: 15px; }\n\n.tabs.tabs--2-column .tabs__item {\n  display: flex;\n  padding: 10px 20px; }\n  .tabs.tabs--2-column .tabs__item > * {\n    flex: 50%; }\n\n.tabs.tabs--no-padding .tabs__item {\n  padding: 0; }\n\n.tabs__tab {\n  display: inline-block;\n  padding: 10px 0;\n  background: none;\n  color: #999;\n  font-weight: 600;\n  cursor: pointer; }\n  @media (max-width: 600px) {\n    .tabs__tab {\n      padding: 10px 15px; } }\n  .tabs__tab:not(:last-child) {\n    margin-right: 15px; }\n    @media (max-width: 600px) {\n      .tabs__tab:not(:last-child) {\n        margin-right: 0; } }\n  .tabs__tab.active {\n    color: #000;\n    border-bottom: 2px solid #fa5630; }\n  .tabs__tab.active-white {\n    color: #fff;\n    border-bottom: 2px solid #fa5630; }\n\n.tabs__item {\n  display: flex;\n  padding: 20px 30px; }\n  @media (max-width: 600px) {\n    .tabs__item {\n      padding: 20px 0; } }\n\n/* Статистика */\n.statistics {\n  display: table;\n  width: 250px;\n  margin-right: 20px; }\n  .statistics > div {\n    display: table-row; }\n    .statistics > div > div {\n      display: table-cell;\n      padding-bottom: 10px; }\n      .statistics > div > div p {\n        font-size: 26px;\n        font-weight: 600;\n        margin: 0; }\n    .statistics > div:not(:last-child) > div {\n      border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n    .statistics > div:not(:first-child) > div {\n      padding-top: 10px; }\n  .statistics__main {\n    color: #fc5630; }\n\n/* Список фильмов */\n.films {\n  width: 100%; }\n  @media (max-width: 600px) {\n    .films {\n      padding: 0 15px; } }\n  .films__filters {\n    display: flex;\n    align-items: center;\n    margin-bottom: 30px;\n    font-size: 14px; }\n    @media (max-width: 600px) {\n      .films__filters {\n        align-items: flex-start; } }\n  .films__sort__text {\n    color: #999; }\n    @media (max-width: 600px) {\n      .films__sort__text {\n        display: none; } }\n  .films__sort .dropdown {\n    display: inline-block;\n    margin-right: 10px; }\n    @media (max-width: 600px) {\n      .films__sort .dropdown {\n        margin-bottom: 15px;\n        margin-right: 10px; } }\n    .films__sort .dropdown .dropdown__main {\n      left: 0;\n      right: initial; }\n      .films__sort .dropdown .dropdown__main li:first-child:before {\n        left: 9px;\n        right: initial; }\n      .films__sort .dropdown .dropdown__main li:first-child:after {\n        left: 10px;\n        right: initial; }\n  .films__view {\n    margin-left: auto; }\n    .films__view .dropdown__label {\n      white-space: nowrap; }\n  .films__table {\n    margin: 0 -15px; }\n    .films__table .film-with-back {\n      width: 50%;\n      display: inline-block; }\n      @media (max-width: 600px) {\n        .films__table .film-with-back {\n          display: block;\n          width: 100%; } }\n      .films__table .film-with-back:nth-child(even) {\n        padding-left: 20px; }\n        .films__table .film-with-back:nth-child(even) .film-with-back__img {\n          left: 40px; }\n        @media (max-width: 600px) {\n          .films__table .film-with-back:nth-child(even) {\n            padding-left: 0; }\n            .films__table .film-with-back:nth-child(even) .film-with-back__img {\n              left: 20px; } }\n      .films__table .film-with-back__year {\n        display: none; }\n    .films__table--list {\n      margin: 0; }\n      .films__table--list .film-with-back {\n        display: block;\n        width: 100%;\n        padding-left: 0 !important; }\n        .films__table--list .film-with-back__note span {\n          display: inline-block; }\n        .films__table--list .film-with-back__year {\n          display: block; }\n        .films__table--list .film-with-back__name .link {\n          font-size: 16px; }\n        .films__table--list .film-with-back__name__year {\n          display: none; }\n        .films__table--list .film-with-back__name .middot span:nth-last-child(2):after {\n          display: none; }\n        .films__table--list .film-with-back__back, .films__table--list .film-with-back__img {\n          display: none; }\n        .films__table--list .film-with-back__info {\n          padding: 0; }\n\n/* Коллекции */\n.collections {\n  flex: 2;\n  padding: 20px 30px 20px; }\n  @media (max-width: 600px) {\n    .collections {\n      padding: 20px 15px 20px; } }\n  .collections__main {\n    display: flex; }\n    @media (max-width: 600px) {\n      .collections__main {\n        display: block; } }\n    .collections__main > *:not(:last-child) {\n      margin-right: 20px; }\n      @media (max-width: 600px) {\n        .collections__main > *:not(:last-child) {\n          margin-right: 0; } }\n\n/* Случайный фильм */\n.random-film {\n  position: relative;\n  flex: 1;\n  padding: 20px 15px; }\n  .random-film__reload {\n    position: absolute;\n    right: 30px;\n    top: 25px;\n    font-size: 18px;\n    color: #999 !important; }\n  .random-film .film-with-back {\n    background: #fff; }\n\n/* История */\n.history__header {\n  padding: 30px 30px 0; }\n\n.history__main {\n  padding: 0 30px; }\n  @media (max-width: 600px) {\n    .history__main {\n      padding: 20px 0; } }\n\nbody {\n  background: #f4f3ef;\n  font-size: 14px; }\n\n.background {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 600px;\n  background-position: top 0px center;\n  background-size: cover;\n  box-shadow: inset 0 100px 100px -50px rgba(0, 0, 0, 0.9); }\n  .background__info {\n    padding-top: 200px;\n    text-align: center; }\n    @media (max-width: 900px) {\n      .background__info {\n        padding-top: 190px; } }\n  .background button {\n    margin-bottom: 10px; }\n  @media (max-width: 600px) {\n    .background {\n      background-position: top 90px center;\n      background-size: auto 160px;\n      background-repeat: no-repeat; } }\n\n.main {\n  position: relative;\n  z-index: 1;\n  box-shadow: 0 30px 50px -25px #a29297;\n  padding: 0;\n  border-radius: 7px; }\n\n.footer {\n  display: flex;\n  padding: 50px 30px 100px; }\n  @media (max-width: 600px) {\n    .footer {\n      display: block; } }\n  .footer__col {\n    flex: 1;\n    margin-right: 40px;\n    margin-bottom: 30px; }\n    .footer__col:last-child {\n      flex: initial;\n      margin-left: auto; }\n      .footer__col:last-child a {\n        display: inline-block;\n        color: #fff;\n        background: #aaa;\n        width: 24px;\n        height: 24px;\n        text-align: center;\n        border-radius: 3px; }\n        .footer__col:last-child a i {\n          line-height: 24px; }\n    .footer__col ul li {\n      padding: 5px 0;\n      color: #999;\n      font-size: 14px; }\n\n.footer-bottom {\n  text-align: center;\n  border-top: 1px solid rgba(80, 80, 80, 0.1);\n  padding: 20px 0;\n  color: #999; }\n\n.persona__main {\n  display: flex;\n  background: #fff;\n  border-radius: 7px 7px 0 0; }\n  @media (max-width: 600px) {\n    .persona__main {\n      display: block; } }\n\n.persona__left {\n  flex: 5; }\n\n.persona__right {\n  position: relative;\n  padding-bottom: 65px;\n  border-left: 1px solid rgba(80, 80, 80, 0.1);\n  flex: 2; }\n  @media (max-width: 600px) {\n    .persona__right {\n      border: 0; } }\n\n.persona__bottom {\n  display: flex;\n  padding-bottom: 30px;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  @media (max-width: 600px) {\n    .persona__bottom {\n      display: block; } }\n\n.persona__footer {\n  text-align: center;\n  padding: 5px 0 20px; }\n  .persona__footer img {\n    width: 80px;\n    opacity: 0.1; }\n\n.bannerFilm {\n  padding: 20px 0;\n  margin: 5px 20px 0;\n  border-bottom: 1px solid rgba(80, 80, 80, 0.1); }\n  .bannerFilm img {\n    width: 100%; }\n\n.banner {\n  padding: 0 30px;\n  margin: 20px 0; }\n  @media (max-width: 600px) {\n    .banner {\n      padding: 0; } }\n\n.correct {\n  position: absolute;\n  bottom: 20px;\n  left: 20px;\n  display: flex;\n  align-items: center; }\n  .correct .btn {\n    display: inline-block;\n    margin-right: 10px; }\n  .correct span {\n    font-size: 11px;\n    color: #999;\n    line-height: 1.2; }\n\n/* Маленькие корректировки */\n@media (max-width: 600px) {\n  .modal-container {\n    border-radius: 0 !important; } }\n\n.night {\n  background: #161616;\n  color: #fff; }\n  .night header .header, .night .nav {\n    background: #161616;\n    color: #fff !important; }\n  @media (min-width: 600px) {\n    .night .header__transparent .header, .night .header__transparent .nav {\n      background: transparent !important; } }\n  .night .is-sticky .header, .night .is-sticky .nav {\n    background: #161616 !important; }\n  .night .main {\n    box-shadow: 0 30px 50px -20px #000; }\n  .night .persona__main {\n    background: #161616; }\n  .night .persona__info__buttons .btn-round--default {\n    background: transparent;\n    color: #fff; }\n  .night .persona__random .film-with-back {\n    background: #050505; }\n  .night .persona .material__title {\n    background: #161616; }\n  .night .collection, .night .random-film .film-with-back {\n    background: #050505; }\n  .night .slider .arrow-right, .night .slider .arrow-left {\n    color: #000; }\n  .night .slider:before, .night .slider:after {\n    background: none; }\n  .night .tabs__tab.active {\n    color: #fff; }\n  .night .modal-container .tabs__tab.active {\n    color: CurrentColor; }\n", ""]);
 
 	// exports
 
@@ -13833,7 +13833,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/App.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/App.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -13844,9 +13844,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-0a23c778", __vue_options__)
+	    hotAPI.createRecord("data-v-5011fa1f", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-0a23c778", __vue_options__)
+	    hotAPI.reload("data-v-5011fa1f", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] App.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -13993,7 +13993,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/_Header.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/_Header.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -14004,9 +14004,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-0311ec43", __vue_options__)
+	    hotAPI.createRecord("data-v-6bc8736a", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-0311ec43", __vue_options__)
+	    hotAPI.reload("data-v-6bc8736a", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] _Header.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -14115,7 +14115,7 @@
 
 
 	$(document).ready(function () {
-	  $("header").sticky({ topSpacing: 0, bottomSpacing: 500, wrapperClassName: "header-wrap" });
+	  //$("header").sticky({topSpacing:0, bottomSpacing:500, wrapperClassName: "header-wrap"});
 	});
 
 /***/ },
@@ -14299,7 +14299,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0311ec43", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6bc8736a", module.exports)
 	  }
 	}
 
@@ -14326,7 +14326,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/_Footer.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/_Footer.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -14337,9 +14337,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-3c40ef5e", __vue_options__)
+	    hotAPI.createRecord("data-v-4a960f78", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-3c40ef5e", __vue_options__)
+	    hotAPI.reload("data-v-4a960f78", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] _Footer.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -14607,7 +14607,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3c40ef5e", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4a960f78", module.exports)
 	  }
 	}
 
@@ -14637,7 +14637,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0a23c778", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5011fa1f", module.exports)
 	  }
 	}
 
@@ -14664,7 +14664,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/Home.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/Home.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -14675,9 +14675,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-4b4216d0", __vue_options__)
+	    hotAPI.createRecord("data-v-523716d1", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-4b4216d0", __vue_options__)
+	    hotAPI.reload("data-v-523716d1", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Home.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -14760,7 +14760,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/_Main.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/_Main.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -14771,9 +14771,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-f1a92e22", __vue_options__)
+	    hotAPI.createRecord("data-v-0a578dd6", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-f1a92e22", __vue_options__)
+	    hotAPI.reload("data-v-0a578dd6", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] _Main.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -14936,7 +14936,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/elements/Modal.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/elements/Modal.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -14947,9 +14947,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-756d2ece", __vue_options__)
+	    hotAPI.createRecord("data-v-f422c472", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-756d2ece", __vue_options__)
+	    hotAPI.reload("data-v-f422c472", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Modal.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -14973,8 +14973,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-756d2ece!../../../node_modules/sass-loader/index.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue", function() {
-				var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-756d2ece!../../../node_modules/sass-loader/index.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue");
+			module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-f422c472!../../../node_modules/sass-loader/index.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue", function() {
+				var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-f422c472!../../../node_modules/sass-loader/index.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -15304,7 +15304,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-756d2ece", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-f422c472", module.exports)
 	  }
 	}
 
@@ -15331,7 +15331,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/FilmList.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/FilmList.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -15342,9 +15342,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2905c0c2", __vue_options__)
+	    hotAPI.createRecord("data-v-28b230e9", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-2905c0c2", __vue_options__)
+	    hotAPI.reload("data-v-28b230e9", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] FilmList.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -15755,7 +15755,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2905c0c2", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-28b230e9", module.exports)
 	  }
 	}
 
@@ -15782,7 +15782,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Background.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Background.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -15793,9 +15793,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-e0bc24a4", __vue_options__)
+	    hotAPI.createRecord("data-v-55f2f015", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-e0bc24a4", __vue_options__)
+	    hotAPI.reload("data-v-55f2f015", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Background.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -15901,7 +15901,7 @@
 	  }, [_c('iframe', {
 	    attrs: {
 	      "width": "100%",
-	      "height": "400",
+	      "height": "500",
 	      "src": _vm.banners.background.trailerSrc,
 	      "frameborder": "0",
 	      "allowfullscreen": ""
@@ -15911,7 +15911,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-e0bc24a4", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-55f2f015", module.exports)
 	  }
 	}
 
@@ -15938,7 +15938,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/MainInfo.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/MainInfo.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -15949,9 +15949,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2989f807", __vue_options__)
+	    hotAPI.createRecord("data-v-2936682e", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-2989f807", __vue_options__)
+	    hotAPI.reload("data-v-2936682e", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] MainInfo.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -16208,7 +16208,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2989f807", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2936682e", module.exports)
 	  }
 	}
 
@@ -16235,7 +16235,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Tabs.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Tabs.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -16246,9 +16246,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-4af41c04", __vue_options__)
+	    hotAPI.createRecord("data-v-68c68da5", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-4af41c04", __vue_options__)
+	    hotAPI.reload("data-v-68c68da5", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Tabs.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -16438,7 +16438,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4af41c04", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-68c68da5", module.exports)
 	  }
 	}
 
@@ -16465,7 +16465,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Biography.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Biography.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -16476,9 +16476,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-568e1723", __vue_options__)
+	    hotAPI.createRecord("data-v-4c6fabdc", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-568e1723", __vue_options__)
+	    hotAPI.reload("data-v-4c6fabdc", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Biography.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -16554,7 +16554,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/elements/ModalWithTab.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/elements/ModalWithTab.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -16565,9 +16565,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2e075ef1", __vue_options__)
+	    hotAPI.createRecord("data-v-f49a5450", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-2e075ef1", __vue_options__)
+	    hotAPI.reload("data-v-f49a5450", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] ModalWithTab.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -16816,7 +16816,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2e075ef1", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-f49a5450", module.exports)
 	  }
 	}
 
@@ -16867,7 +16867,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-568e1723", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4c6fabdc", module.exports)
 	  }
 	}
 
@@ -16894,7 +16894,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Photo.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Photo.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -16905,9 +16905,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-9db02c3c", __vue_options__)
+	    hotAPI.createRecord("data-v-2a0a79ca", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-9db02c3c", __vue_options__)
+	    hotAPI.reload("data-v-2a0a79ca", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Photo.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -17030,7 +17030,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-9db02c3c", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2a0a79ca", module.exports)
 	  }
 	}
 
@@ -17057,7 +17057,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Materials.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Materials.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -17068,9 +17068,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-f6dcda48", __vue_options__)
+	    hotAPI.createRecord("data-v-7a732795", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-f6dcda48", __vue_options__)
+	    hotAPI.reload("data-v-7a732795", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Materials.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -17199,7 +17199,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-f6dcda48", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7a732795", module.exports)
 	  }
 	}
 
@@ -17226,7 +17226,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Connect.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Connect.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -17237,9 +17237,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-6ae4e29a", __vue_options__)
+	    hotAPI.createRecord("data-v-7b665193", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-6ae4e29a", __vue_options__)
+	    hotAPI.reload("data-v-7b665193", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Connect.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -17359,7 +17359,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6ae4e29a", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7b665193", module.exports)
 	  }
 	}
 
@@ -17386,7 +17386,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Sites.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Sites.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -17397,9 +17397,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-76158e88", __vue_options__)
+	    hotAPI.createRecord("data-v-026fdc16", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-76158e88", __vue_options__)
+	    hotAPI.reload("data-v-026fdc16", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Sites.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -17506,7 +17506,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-76158e88", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-026fdc16", module.exports)
 	  }
 	}
 
@@ -17533,7 +17533,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Collections.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Collections.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -17544,9 +17544,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-593875c5", __vue_options__)
+	    hotAPI.createRecord("data-v-5d07c03e", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-593875c5", __vue_options__)
+	    hotAPI.reload("data-v-5d07c03e", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Collections.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -17692,7 +17692,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-593875c5", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5d07c03e", module.exports)
 	  }
 	}
 
@@ -17719,7 +17719,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/Random.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/Random.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -17730,9 +17730,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-c8c9427a", __vue_options__)
+	    hotAPI.createRecord("data-v-c7b8a6ac", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-c8c9427a", __vue_options__)
+	    hotAPI.reload("data-v-c7b8a6ac", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Random.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -17878,7 +17878,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-c8c9427a", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-c7b8a6ac", module.exports)
 	  }
 	}
 
@@ -17905,7 +17905,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/blocks/History.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/blocks/History.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -17916,9 +17916,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-191e6944", __vue_options__)
+	    hotAPI.createRecord("data-v-299fd83d", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-191e6944", __vue_options__)
+	    hotAPI.reload("data-v-299fd83d", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] History.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -18027,7 +18027,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-191e6944", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-299fd83d", module.exports)
 	  }
 	}
 
@@ -18144,7 +18144,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-f1a92e22", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0a578dd6", module.exports)
 	  }
 	}
 
@@ -18165,7 +18165,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4b4216d0", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-523716d1", module.exports)
 	  }
 	}
 
@@ -18192,7 +18192,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/Page1.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/Page1.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -18203,9 +18203,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-27f6d099", __vue_options__)
+	    hotAPI.createRecord("data-v-a9ba1500", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-27f6d099", __vue_options__)
+	    hotAPI.reload("data-v-a9ba1500", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Page1.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -18283,7 +18283,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-27f6d099", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-a9ba1500", module.exports)
 	  }
 	}
 
@@ -18310,7 +18310,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/taras/Desktop/Work/KINOPOISK2/src/components/Page2.vue"
+	__vue_options__.__file = "/Users/taras/Desktop/GitHub/Kinopoisk/ver1/src/components/Page2.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -18321,9 +18321,9 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2804e81a", __vue_options__)
+	    hotAPI.createRecord("data-v-a99de5fe", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-2804e81a", __vue_options__)
+	    hotAPI.reload("data-v-a99de5fe", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Page2.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -18399,7 +18399,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2804e81a", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-a99de5fe", module.exports)
 	  }
 	}
 

@@ -627,10 +627,10 @@
   }
 }
 
-
+/* Модальное окно */
 .modal-mask {
   position: fixed;
-  z-index: 9998;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -666,6 +666,7 @@
 }
 .modal-container {
   position: relative;
+  min-width: 50%;
   max-width: 800px;
   margin: 0px auto;
   background:#fff;
