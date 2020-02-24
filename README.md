@@ -10,7 +10,7 @@ npm install
 npm start
 ```
 
-![Page](http://sdelal.xyz/video/kinopoisk.jpg)
+![Page](https://taras.top/i/kinopoisk.jpg)
 
 # О проекте
 
